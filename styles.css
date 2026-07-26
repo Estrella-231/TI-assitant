@@ -1,4 +1,4 @@
-﻿from pathlib import Path
+from pathlib import Path
 p=Path('blog/index.html'); s=p.read_text(encoding='utf-8')
 start=s.index('<header class="hero">'); end=s.index('</header>', start)+len('</header>')
 hero='''<header class="hero" style="--hero:url('assets/mai-sakurajima.jpg')"><div class="hero-shade"></div><nav class="nav shell"><a class="brand" href="#top">嵌入式工程笔记</a><div class="nav-links"><a href="#content">文章</a><a href="#about">关于</a><button id="theme" aria-label="切换主题">☾</button></div></nav><div class="hero-inner shell" id="top"><div class="eyebrow">MSPM0 · CMAKE · VS CODE</div><h1>Ti Project<br><span>Assistant</span></h1><p>把芯片配置、编译、烧录与调试，整理成一条可重复的现代化工作流。</p><div class="hero-meta"><span>⌁ 2026.07.25</span><span>◷ 30 min read</span><span># Embedded</span></div></div><div class="scroll-cue">SCROLL ↓</div></header>'''

@@ -1,351 +1,351 @@
-﻿<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>宓屽叆寮忓伐绋嬬瑪璁?路 Ti Project Assistant</title><meta name="description" content="MSPM0銆丼ysConfig銆丆Make 涓?VS Code 鐨勭幇浠ｅ祵鍏ュ紡寮€鍙戠瑪璁?><link rel="stylesheet" href="styles.css"></head><body><header class="hero" style="--hero:url('assets/mai-sakurajima.jpg')"><div class="hero-shade"></div><nav class="nav shell"><a class="brand" href="#top">宓屽叆寮忓伐绋嬬瑪璁?/a><div class="nav-links"><a href="#content">鏂囩珷</a><a href="#about">鍏充簬</a><button id="theme" aria-label="鍒囨崲涓婚">鈽?/button></div></nav><div class="hero-inner shell" id="top"><div class="eyebrow">MSPM0 路 CMAKE 路 VS CODE</div><h1>Ti Project<br><span>Assistant</span></h1><p>鎶婅姱鐗囬厤缃€佺紪璇戙€佺儳褰曚笌璋冭瘯锛屾暣鐞嗘垚涓€鏉″彲閲嶅鐨勭幇浠ｅ寲宸ヤ綔娴併€?/p><div class="hero-meta"><span>鈱?2026.07.25</span><span>鈼?30 min read</span><span># Embedded</span></div></div><div class="scroll-cue">SCROLL 鈫?/div></header><main class="shell layout"><article class="article"><div class="notice">鏈枃涓烘暀绋嬪唴瀹硅縼绉荤増锛屽師浣滆€呬笌鍘熸枃閾炬帴瑙佹枃鏈紱鍦ㄦ鍩虹涓婅ˉ鍏呬簡鏈満 Windows 瀹夎瀹炶返銆?/div><div id="content"><h1 id="Ti-Project-Assistant-TPA-浣跨敤鏁欑▼"><a href="#Ti-Project-Assistant-TPA-浣跨敤鏁欑▼" class="headerlink" title="Ti-Project-Assistant (TPA) 浣跨敤鏁欑▼"></a>Ti-Project-Assistant (TPA) 浣跨敤鏁欑▼</h1><p>浠撳簱鍦板潃锛?a target="_blank" rel="noopener" href="https://github.com/AndyYang12345/Ti-Project-Assistant.git">Ti-Project-Assistant</a></p>
-<h2 id="1-鍓嶈█"><a href="#1-鍓嶈█" class="headerlink" title="1.鍓嶈█"></a>1.鍓嶈█</h2><p>杩欑瘒鏂囩珷鏄叧浜庢垜鐨勫紑婧愬皬椤圭洰 <strong>Ti-Project-Assistant</strong>锛堜互涓嬬畝绉?<strong>TPA</strong>锛夌殑浣跨敤鏁欑▼锛屼富瑕佹槸甯ぇ瀹舵洿蹇湴寮€濮婱0鑺墖鐨勫紑鍙戯紝涓昏鏄潰鍚戠數璧涚殑鍚屽浠紝鏃犺浣犳槸鏂版墜杩樻槸鑰佹墜锛岃繖涓」鐩彲浠ユ洿蹇湴甯綘涓婃墜涓氬姟寮€鍙戯紝骞朵笖鎸夌収鏈€鍓嶆部銆佹渶鐜颁唬鐨勬柟寮忕粍缁囪嚜宸辩殑椤圭洰锛岄€氳繃CMake鍜孷SCode鐨勭粨鍚堬紝瀹炵幇瀹屽叏鎽嗚劚Keil鍜孋CS Theia鐨勬潫缂氾紝浣跨敤鐜颁唬鍖栫殑寮€鍙戞柟寮忚繘琛屽叏娴佺▼閰嶇疆銆佸紑鍙戙€佺紪璇戙€佺儳褰曞拰璋冭瘯銆?/p>
-<p>鎴戠殑椤圭洰宸茬粡寮€婧愬湪Github锛屽彲浠ラ€氳繃PyPI涓€閿畨瑁咃細<code>pip install ti-project-assistant</code>銆備负浜嗘弧瓒冲浗鍐呯綉缁滅幆澧冪殑闇€姹傦紝鍚庣画浼氳縼绉诲埌Gitee涓婏紝澶у鍙互閫氳繃缃戠珯鑾峰彇瀹屾暣寮€婧愰」鐩€?/p>
-<h2 id="2-椤圭洰浠嬬粛"><a href="#2-椤圭洰浠嬬粛" class="headerlink" title="2.椤圭洰浠嬬粛"></a>2.椤圭洰浠嬬粛</h2><p>杩欎釜椤圭洰鐢?Python 缂栧啓锛屽凡鍙戝竷鑷?PyPI锛屽彲閫氳繃 <code>pip install ti-project-assistant</code> 涓€閿畨瑁呫€傚畨瑁呭悗 <code>mspm0-init</code> 鍛戒护鍏ㄥ眬鍙敤銆傚畠閫氳繃鐜鍙橀噺閰嶇疆璇诲彇 Sysconfig锛圱I 瀹樻柟鍥惧舰鍖栬姱鐗囬厤缃伐鍏凤級鍜?M0SDK锛圱I 瀹樻柟鎻愪緵鐨?M0 鑺墖寮€鍙戝浠讹級鐨勪綅缃紝閫氳繃璇诲彇 syscfg 閰嶇疆鏂囦欢锛岃嚜鍔ㄨ皟鐢ㄤ唬鐮佺敓鎴愯剼鏈?sysconfig cli锛屽湪鐢熸垚蹇呰閰嶇疆浠ｇ爜鐨勫熀纭€涓婏紝鑷姩灏佽椤圭洰缁撴瀯銆佺紪鍐?CMakelists 鏂囦欢锛岄€氳繃绗﹀悎鐜颁唬宸ョ▼瀹炶返鐨勭洰褰曟灦鏋勭粍缁囬」鐩紙鍒嗗眰 <code>inc/</code>&#x2F;<code>src/</code>锛?code>config/</code> 鐩綍闅旂鑷姩鐢熸垚浠ｇ爜锛夛紝澶у鍙互鐩存帴鍦?VSCode 涓墦寮€椤圭洰锛岀劧鍚庡湪涓荤▼搴忕殑浣嶇疆寮€濮嬮」鐩笟鍔￠€昏緫鐨勫紑鍙戞垨鏄簳灞傞┍鍔ㄧ殑缂栧啓銆傝鑴氭湰杩樹細鐢熸垚閫傜敤浜?VSCode 鐨勫叏濂楅厤缃枃浠讹紙launch.json &#x2F; tasks.json &#x2F; settings.json &#x2F; c_cpp_properties.json锛夈€?/p>
-<p>v1.0.0 缁忚繃瀹屾暣閲嶆瀯锛屾敮鎸?<strong>SDK 涓叏閮?58 娆?MSPM0 鑺墖</strong>杩愯鏃惰嚜鍔ㄥ彂鐜帮紙鏃犻渶纭紪鐮佽姱鐗囧瀷鍙凤級锛岃皟璇曞櫒鏀寔 <strong>CMSIS-DAP &#x2F; XDS110 &#x2F; JLink &#x2F; none</strong> 鍥涚妯″紡锛?/p>
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>嵌入式工程笔记 · Ti Project Assistant</title><meta name="description" content="MSPM0、SysConfig、CMake 与 VS Code 的现代嵌入式开发笔记"><link rel="stylesheet" href="styles.css"></head><body><header class="hero" style="--hero:url('assets/mai-sakurajima.jpg')"><div class="hero-shade"></div><nav class="nav shell"><a class="brand" href="#top">嵌入式工程笔记</a><div class="nav-links"><a href="#content">文章</a><a href="#about">关于</a><button id="theme" aria-label="切换主题">☾</button></div></nav><div class="hero-inner shell" id="top"><div class="eyebrow">MSPM0 · CMAKE · VS CODE</div><h1>Ti Project<br><span>Assistant</span></h1><p>把芯片配置、编译、烧录与调试，整理成一条可重复的现代化工作流。</p><div class="hero-meta"><span>⌁ 2026.07.25</span><span>◷ 30 min read</span><span># Embedded</span></div></div><div class="scroll-cue">SCROLL ↓</div></header><main class="shell layout"><article class="article"><div class="notice">本文为教程内容迁移版，原作者与原文链接见文末；在此基础上补充了本机 Windows 安装实践。</div><div id="content"><h1 id="Ti-Project-Assistant-TPA-使用教程"><a href="#Ti-Project-Assistant-TPA-使用教程" class="headerlink" title="Ti-Project-Assistant (TPA) 使用教程"></a>Ti-Project-Assistant (TPA) 使用教程</h1><p>仓库地址：<a target="_blank" rel="noopener" href="https://github.com/AndyYang12345/Ti-Project-Assistant.git">Ti-Project-Assistant</a></p>
+<h2 id="1-前言"><a href="#1-前言" class="headerlink" title="1.前言"></a>1.前言</h2><p>这篇文章是关于我的开源小项目 <strong>Ti-Project-Assistant</strong>（以下简称 <strong>TPA</strong>）的使用教程，主要是帮大家更快地开始M0芯片的开发，主要是面向电赛的同学们，无论你是新手还是老手，这个项目可以更快地帮你上手业务开发，并且按照最前沿、最现代的方式组织自己的项目，通过CMake和VSCode的结合，实现完全摆脱Keil和CCS Theia的束缚，使用现代化的开发方式进行全流程配置、开发、编译、烧录和调试。</p>
+<p>我的项目已经开源在Github，可以通过PyPI一键安装：<code>pip install ti-project-assistant</code>。为了满足国内网络环境的需求，后续会迁移到Gitee上，大家可以通过网站获取完整开源项目。</p>
+<h2 id="2-项目介绍"><a href="#2-项目介绍" class="headerlink" title="2.项目介绍"></a>2.项目介绍</h2><p>这个项目用 Python 编写，已发布至 PyPI，可通过 <code>pip install ti-project-assistant</code> 一键安装。安装后 <code>mspm0-init</code> 命令全局可用。它通过环境变量配置读取 Sysconfig（TI 官方图形化芯片配置工具）和 M0SDK（TI 官方提供的 M0 芯片开发套件）的位置，通过读取 syscfg 配置文件，自动调用代码生成脚本 sysconfig cli，在生成必要配置代码的基础上，自动封装项目结构、编写 CMakelists 文件，通过符合现代工程实践的目录架构组织项目（分层 <code>inc/</code>&#x2F;<code>src/</code>，<code>config/</code> 目录隔离自动生成代码），大家可以直接在 VSCode 中打开项目，然后在主程序的位置开始项目业务逻辑的开发或是底层驱动的编写。该脚本还会生成适用于 VSCode 的全套配置文件（launch.json &#x2F; tasks.json &#x2F; settings.json &#x2F; c_cpp_properties.json）。</p>
+<p>v1.0.0 经过完整重构，支持 <strong>SDK 中全部 58 款 MSPM0 芯片</strong>运行时自动发现（无需硬编码芯片型号），调试器支持 <strong>CMSIS-DAP &#x2F; XDS110 &#x2F; JLink &#x2F; none</strong> 四种模式：</p>
 <ul>
-<li><strong>CMSIS-DAP &#x2F; XDS110</strong>锛氶€氳繃 OpenOCD锛堥€夐厤锛屼娇鐢ㄨ繖涓ょ璋冭瘯鍣ㄦ椂蹇呰锛夎繛鎺?GDB Server 杩涜鐑у綍鍜岃皟璇?/li>
-<li><strong>JLink</strong>锛氫娇鐢?Segger 鍘熺敓 GDB Server锛屽畬鍏ㄧ粫杩?OpenOCD锛岀儳褰曡皟璇曟洿绋冲畾</li>
-<li><strong>none</strong>锛氫笉鐢熸垚璋冭瘯閰嶇疆锛岀函缂栬瘧鐜</li>
+<li><strong>CMSIS-DAP &#x2F; XDS110</strong>：通过 OpenOCD（选配，使用这两种调试器时必装）连接 GDB Server 进行烧录和调试</li>
+<li><strong>JLink</strong>：使用 Segger 原生 GDB Server，完全绕过 OpenOCD，烧录调试更稳定</li>
+<li><strong>none</strong>：不生成调试配置，纯编译环境</li>
 </ul>
-<p>鏈€鏂扮増鏈紙v1.0.0锛夎繕鏀寔锛?/p>
+<p>最新版本（v1.0.0）还支持：</p>
 <ul>
-<li><strong>涓€閿畨瑁?/strong>锛?code>pip install ti-project-assistant</code>锛屾棤闇€鎵嬪姩绠＄悊鑴氭湰</li>
-<li><strong>Git 鑷姩鍒濆鍖?/strong>锛氭娴嬪埌 Git 宸插畨瑁呮椂鑷姩 <code>git init</code> + <code>.gitignore</code></li>
-<li><strong>鐘舵€佹爮蹇嵎鎸夐挳</strong>锛氶厤鍚?Task Buttons 鎻掍欢锛岀姸鎬佹爮鐩存帴鐐瑰嚮 SysConfig &#x2F; Build &#x2F; Flash &#x2F; Clean</li>
-<li><strong>鐙珛鐑у綍浠诲姟</strong>锛?code>Flash MSPM0</code> 浠诲姟涓€閿儳褰曪紝鏃犻渶杩涘叆璋冭瘯妯″紡</li>
-<li><strong>鍔ㄦ€佸垏鎹㈣皟璇曞櫒</strong>锛?code>mspm0-init regenerate -d jlink</code> 鍗冲彲鍒囨崲锛屾敮鎸?CMSIS-DAP &#x2F; XDS110 &#x2F; JLink &#x2F; none</li>
-<li><strong>JLink 鍘熺敓鏀寔</strong>锛氫娇鐢?Segger GDB Server锛屾棤闇€ OpenOCD锛?code>--jlink-path</code> 鎵嬪姩鎸囧畾璺緞</li>
-<li><strong>宸ュ叿璺緞鐏垫椿閰嶇疆</strong>锛欳LI 鍙傛暟 鈫?鐜鍙橀噺 鈫?PATH 鑷姩鍙戠幇 鈫?骞冲彴璺緞鍏滃簳锛屼簲绾т紭鍏堢骇瑙ｆ瀽鎵€鏈夊伐鍏烽摼</li>
-<li><strong>瀹屾暣 CLI 瑕嗙洊</strong>锛?code>--sdk</code> &#x2F; <code>--sysconfig</code> &#x2F; <code>--jlink-path</code> &#x2F; <code>--openocd</code> &#x2F; <code>--gdb</code> 鎵嬪姩鎸囧畾鍚勫伐鍏疯矾寰?/li>
+<li><strong>一键安装</strong>：<code>pip install ti-project-assistant</code>，无需手动管理脚本</li>
+<li><strong>Git 自动初始化</strong>：检测到 Git 已安装时自动 <code>git init</code> + <code>.gitignore</code></li>
+<li><strong>状态栏快捷按钮</strong>：配合 Task Buttons 插件，状态栏直接点击 SysConfig &#x2F; Build &#x2F; Flash &#x2F; Clean</li>
+<li><strong>独立烧录任务</strong>：<code>Flash MSPM0</code> 任务一键烧录，无需进入调试模式</li>
+<li><strong>动态切换调试器</strong>：<code>mspm0-init regenerate -d jlink</code> 即可切换，支持 CMSIS-DAP &#x2F; XDS110 &#x2F; JLink &#x2F; none</li>
+<li><strong>JLink 原生支持</strong>：使用 Segger GDB Server，无需 OpenOCD，<code>--jlink-path</code> 手动指定路径</li>
+<li><strong>工具路径灵活配置</strong>：CLI 参数 → 环境变量 → PATH 自动发现 → 平台路径兜底，五级优先级解析所有工具链</li>
+<li><strong>完整 CLI 覆盖</strong>：<code>--sdk</code> &#x2F; <code>--sysconfig</code> &#x2F; <code>--jlink-path</code> &#x2F; <code>--openocd</code> &#x2F; <code>--gdb</code> 手动指定各工具路径</li>
 </ul>
-<p>杩欎釜椤圭洰鐨勮璁″垵琛锋槸涓轰簡鏂逛究鑷繁鏇磋交鏉惧湴閰嶇疆椤圭洰缁撴瀯锛屽疄鐜板叏娴佺▼Linux鐜涓嬬殑宓屽叆寮忓紑鍙戙€傚湪瀹屾垚鍚庤繘琛屼簡绠€鍗曠殑灏佽鍜學indows鐨勯€傞厤锛屽彉鎴愪簡鐜板湪杩欎釜鍙互渚涘ぇ瀹跺涔犲弬鑰冪殑寮€婧愬伐鍏凤紝甯屾湜鑳藉湪鐢佃禌涓府涓婂ぇ瀹剁殑蹇欍€?/p>
-<p>涔熷氨鏄锛屼綘鍙渶瑕佸畨瑁呮渶鍩烘湰鐨勫紑鍙戜緷璧栥€侀厤缃姱鐗囥€佽繍琛岃剼鏈殑鈥滀笁姝ヨ蛋鈥濇祦绋嬶紝灏卞彲浠ュ揩閫熻繘鍏ュ紑鍙戯紝鐩存帴浜敤VSCode甯︽潵鐨勭幇浠ｅ寲寮€鍙戜綋楠屻€傝鑰呭彲浠ヨ嚜琛屾帴鍏laude鎴栨槸Copilot绛堿I鎻掍欢锛屽疄鐜板叏娴佺▼鐨勬櫤鑳藉紑鍙戜綋楠屻€?/p>
-<h2 id="3-浣跨敤鏁欑▼"><a href="#3-浣跨敤鏁欑▼" class="headerlink" title="3.浣跨敤鏁欑▼"></a>3.浣跨敤鏁欑▼</h2><h3 id="鐢ㄥ墠椤荤煡"><a href="#鐢ㄥ墠椤荤煡" class="headerlink" title="鐢ㄥ墠椤荤煡"></a>鐢ㄥ墠椤荤煡</h3><ul>
-<li>澶ч儴鍒嗗祵鍏ュ紡寮€鍙戣€呴兘鏄湪Windows绯荤粺杩涜寮€鍙戠殑锛屾湰椤圭洰閽堝Windows鍋氫簡閫傞厤锛屾墍浠ュぇ瀹舵槸鍙互鍦╓indows绯荤粺涓嬬洿鎺ヤ娇鐢ㄧ殑銆?/li>
+<p>这个项目的设计初衷是为了方便自己更轻松地配置项目结构，实现全流程Linux环境下的嵌入式开发。在完成后进行了简单的封装和Windows的适配，变成了现在这个可以供大家学习参考的开源工具，希望能在电赛中帮上大家的忙。</p>
+<p>也就是说，你只需要安装最基本的开发依赖、配置芯片、运行脚本的“三步走”流程，就可以快速进入开发，直接享用VSCode带来的现代化开发体验。读者可以自行接入Claude或是Copilot等AI插件，实现全流程的智能开发体验。</p>
+<h2 id="3-使用教程"><a href="#3-使用教程" class="headerlink" title="3.使用教程"></a>3.使用教程</h2><h3 id="用前须知"><a href="#用前须知" class="headerlink" title="用前须知"></a>用前须知</h3><ul>
+<li>大部分嵌入式开发者都是在Windows系统进行开发的，本项目针对Windows做了适配，所以大家是可以在Windows系统下直接使用的。</li>
 </ul>
-<h3 id="3-1-瀹夎渚濊禆"><a href="#3-1-瀹夎渚濊禆" class="headerlink" title="3.1 瀹夎渚濊禆"></a>3.1 瀹夎渚濊禆</h3><p>鍦?Windows 涓婁娇鐢ㄨ繖涓」鐩紝寤鸿鍏堟妸涓嬮潰杩欎簺鍩虹渚濊禆鍑嗗濂姐€傚畠浠垎鍒礋璐ｈ剼鏈繍琛屻€佷氦鍙夌紪璇戙€佹瀯寤虹郴缁熴€乀I 瀹樻柟閰嶇疆鐢熸垚锛屼互鍙婂悗缁殑涓嬭浇鍜岃皟璇曘€?/p>
-<h4 id="0锛夊畨瑁?ti-project-assistant"><a href="#0锛夊畨瑁?ti-project-assistant" class="headerlink" title="0锛夊畨瑁?ti-project-assistant"></a>0锛夊畨瑁?ti-project-assistant</h4><p>纭繚 Python 宸插畨瑁呭悗锛岄鍏堥€氳繃 pip 瀹夎椤圭洰鏈韩锛?/p>
+<h3 id="3-1-安装依赖"><a href="#3-1-安装依赖" class="headerlink" title="3.1 安装依赖"></a>3.1 安装依赖</h3><p>在 Windows 上使用这个项目，建议先把下面这些基础依赖准备好。它们分别负责脚本运行、交叉编译、构建系统、TI 官方配置生成，以及后续的下载和调试。</p>
+<h4 id="0）安装-ti-project-assistant"><a href="#0）安装-ti-project-assistant" class="headerlink" title="0）安装 ti-project-assistant"></a>0）安装 ti-project-assistant</h4><p>确保 Python 已安装后，首先通过 pip 安装项目本身：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install ti<span class="literal">-project-assistant</span></span><br></pre></td></tr></table></figure>
 
-<p>瀹夎瀹屾垚鍚庯紝<code>mspm0-init</code> 鍛戒护鍗冲彲鍦ㄧ粓绔腑鍏ㄥ眬浣跨敤銆傛棤闇€鎵嬪姩涓嬭浇鎴栨嫹璐濊剼鏈€?/p>
-<p>鍙互杩愯<code>mspm0-init --version</code>锛堟垨 <code>-V</code>锛夋煡鐪嬬増鏈俊鎭紝鐩墠鏈€鏂扮増鏈簲璇ユ槸 v1.0.0銆?/p>
+<p>安装完成后，<code>mspm0-init</code> 命令即可在终端中全局使用。无需手动下载或拷贝脚本。</p>
+<p>可以运行<code>mspm0-init --version</code>（或 <code>-V</code>）查看版本信息，目前最新版本应该是 v1.0.0。</p>
 <blockquote>
-<p><strong>馃挕 寤鸿</strong>锛氬畨瑁?TPA 鍚庯紝绔嬪埢杩愯 <code>mspm0-init --check</code> 妫€鏌ュ綋鍓嶇幆澧冪姸鎬併€傚畠浼氬垪鍑烘墍鏈変緷璧栭」鐨勬娴嬬粨鏋滐紙鍝簺宸插氨缁€佸摢浜涚己澶憋級锛屾帴涓嬫潵鎸夎瘖鏂粨鏋滈€愰」琛ラ綈鍗冲彲鈥斺€斾笉蹇呯洸鐩畨瑁呭叏閮ㄥ伐鍏枫€?/p>
+<p><strong>💡 建议</strong>：安装 TPA 后，立刻运行 <code>mspm0-init --check</code> 检查当前环境状态。它会列出所有依赖项的检测结果（哪些已就绪、哪些缺失），接下来按诊断结果逐项补齐即可——不必盲目安装全部工具。</p>
 </blockquote>
-<h4 id="涓€鐐圭纰庡康"><a href="#涓€鐐圭纰庡康" class="headerlink" title="涓€鐐圭纰庡康"></a>涓€鐐圭纰庡康</h4><blockquote>
-<p><strong>TL;DR</strong> 鈥?濡傛灉浣犲凡缁忎簡瑙ｅ祵鍏ュ紡寮€鍙戠殑缂栬瘧-鐑у綍-璋冭瘯娴佺▼锛屽彲浠ョ洿鎺ヨ烦杩囨湰鑺傦紝<a href="#1%EF%BC%89Python">杩涘叆渚濊禆瀹夎</a>銆?/p>
+<h4 id="一点碎碎念"><a href="#一点碎碎念" class="headerlink" title="一点碎碎念"></a>一点碎碎念</h4><blockquote>
+<p><strong>TL;DR</strong> — 如果你已经了解嵌入式开发的编译-烧录-调试流程，可以直接跳过本节，<a href="#1%EF%BC%89Python">进入依赖安装</a>。</p>
 </blockquote>
-<p>瀵逛簬涓嶅お娓呮缂栬瘧銆佺儳褰曘€佽皟璇曟祦绋嬬殑鍚屽锛岃繖涓€鑺傛垜鐢ㄦ渶绠€鍗曠殑鏂瑰紡璁茶В宓屽叆寮忓紑鍙戠殑鍏ㄦ祦绋嬶紝璁╀綘鑷冲皯鐭ラ亾姣忎竴姝ュ湪鍋氫粈涔堛€傚祵鍏ュ紡寮€鍙戦€氬父缁忓巻鍥涗釜闃舵锛?/p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">缂栧啓浠ｇ爜  鈫? 缂栬瘧  鈫? 鐑у綍  鈫? 璋冭瘯</span><br></pre></td></tr></table></figure>
+<p>对于不太清楚编译、烧录、调试流程的同学，这一节我用最简单的方式讲解嵌入式开发的全流程，让你至少知道每一步在做什么。嵌入式开发通常经历四个阶段：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">编写代码  →  编译  →  烧录  →  调试</span><br></pre></td></tr></table></figure>
 
 <hr>
-<h5 id="鈶?缂栧啓浠ｇ爜"><a href="#鈶?缂栧啓浠ｇ爜" class="headerlink" title="鈶?缂栧啓浠ｇ爜"></a>鈶?缂栧啓浠ｇ爜</h5><p>杩欏綋鐒舵槸鎴戜滑鏈€鐔熸倝鐨勯樁娈点€傚湪 VSCode 鎴栧叾浠?IDE 涓啓 C&#x2F;C++ 浠ｇ爜锛屼繚瀛樺埌 <code>src/</code> 鐩綍涓嬪嵆鍙€?/p>
+<h5 id="①-编写代码"><a href="#①-编写代码" class="headerlink" title="① 编写代码"></a>① 编写代码</h5><p>这当然是我们最熟悉的阶段。在 VSCode 或其他 IDE 中写 C&#x2F;C++ 代码，保存到 <code>src/</code> 目录下即可。</p>
 <hr>
-<h5 id="鈶?缂栬瘧-鈥?鎶婁唬鐮佸彉鎴愯姱鐗囪兘鎳傜殑浜岃繘鍒?><a href="#鈶?缂栬瘧-鈥?鎶婁唬鐮佸彉鎴愯姱鐗囪兘鎳傜殑浜岃繘鍒? class="headerlink" title="鈶?缂栬瘧 鈥?鎶婁唬鐮佸彉鎴愯姱鐗囪兘鎳傜殑浜岃繘鍒?></a>鈶?缂栬瘧 鈥?鎶婁唬鐮佸彉鎴愯姱鐗囪兘鎳傜殑浜岃繘鍒?/h5><p>鎸変笅缂栬瘧鎸夐挳鍚庯紝<strong>缂栬瘧鍣?/strong>浼氭妸浣犵殑 C 浠ｇ爜缈昏瘧鎴愭満鍣ㄥ彲浠ヨ鎳傜殑浜岃繘鍒舵枃浠躲€傝繖涓繃绋嬪疄闄呬笂鍒嗕负棰勫鐞嗐€佺紪璇戙€佹眹缂栥€侀摼鎺ョ瓑鍑犱釜瀛愭楠わ紝浣嗘殏鏃朵笉闇€瑕佸叧蹇冭繖浜涚粏鑺傗€斺€斾綘鍙渶瑕佺煡閬擄細</p>
+<h5 id="②-编译-—-把代码变成芯片能懂的二进制"><a href="#②-编译-—-把代码变成芯片能懂的二进制" class="headerlink" title="② 编译 — 把代码变成芯片能懂的二进制"></a>② 编译 — 把代码变成芯片能懂的二进制</h5><p>按下编译按钮后，<strong>编译器</strong>会把你的 C 代码翻译成机器可以读懂的二进制文件。这个过程实际上分为预处理、编译、汇编、链接等几个子步骤，但暂时不需要关心这些细节——你只需要知道：</p>
 <blockquote>
-<p><strong>缂栬瘧鍣紙<code>arm-none-eabi-gcc</code>锛?/strong> 鎶婁綘鍐欑殑浠ｇ爜鍙樻垚 <code>.elf</code> 鏂囦欢锛岄噷闈㈡槸鑺墖鍙互鎵ц鐨勪竴涓?0 鍜?1銆?/p>
+<p><strong>编译器（<code>arm-none-eabi-gcc</code>）</strong> 把你写的代码变成 <code>.elf</code> 文件，里面是芯片可以执行的一串 0 和 1。</p>
 </blockquote>
 <hr>
-<h5 id="鈶?鐑у綍-鈥?鎶婁簩杩涘埗鏂囦欢鍐欏叆鑺墖"><a href="#鈶?鐑у綍-鈥?鎶婁簩杩涘埗鏂囦欢鍐欏叆鑺墖" class="headerlink" title="鈶?鐑у綍 鈥?鎶婁簩杩涘埗鏂囦欢鍐欏叆鑺墖"></a>鈶?鐑у綍 鈥?鎶婁簩杩涘埗鏂囦欢鍐欏叆鑺墖</h5><p>缂栬瘧鍣ㄧ敓鎴愮殑 <code>.elf</code> 鏂囦欢涓嶈兘鐩存帴鍦ㄧ數鑴戜笂杩愯鈥斺€斿畠鏄负鑺墖璁捐鐨勩€備綘闇€瑕佷竴涓?strong>鐑у綍鍣?/strong>锛堢‖浠讹級鎶婂畠浼犺緭鍒拌姱鐗囩殑闂瓨涓幓銆?/p>
-<p>杩欎釜杩囩▼鐨勫弬涓庤鑹叉湁涓変釜锛?/p>
+<h5 id="③-烧录-—-把二进制文件写入芯片"><a href="#③-烧录-—-把二进制文件写入芯片" class="headerlink" title="③ 烧录 — 把二进制文件写入芯片"></a>③ 烧录 — 把二进制文件写入芯片</h5><p>编译器生成的 <code>.elf</code> 文件不能直接在电脑上运行——它是为芯片设计的。你需要一个<strong>烧录器</strong>（硬件）把它传输到芯片的闪存中去。</p>
+<p>这个过程的参与角色有三个：</p>
 <table>
 <thead>
 <tr>
-<th>瑙掕壊</th>
-<th>鏄粈涔?/th>
-<th>渚嬪瓙</th>
+<th>角色</th>
+<th>是什么</th>
+<th>例子</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>鐑у綍鍣紙纭欢锛?/strong></td>
-<td>USB 杩炴帴鐢佃剳鍜岃姱鐗囩殑鐗╃悊璁惧</td>
-<td>DAPLink銆乆DS110銆丣Link</td>
+<td><strong>烧录器（硬件）</strong></td>
+<td>USB 连接电脑和芯片的物理设备</td>
+<td>DAPLink、XDS110、JLink</td>
 </tr>
 <tr>
-<td><strong>鐑у綍绋嬪簭锛堣蒋浠讹級</strong></td>
-<td>鐢佃剳涓婁笌鐑у綍鍣ㄩ€氫俊鐨勭▼搴?/td>
-<td><strong>OpenOCD</strong> 鎴?<strong>JLink GDB Server</strong></td>
+<td><strong>烧录程序（软件）</strong></td>
+<td>电脑上与烧录器通信的程序</td>
+<td><strong>OpenOCD</strong> 或 <strong>JLink GDB Server</strong></td>
 </tr>
 <tr>
-<td><strong>鐩爣</strong></td>
-<td>浣犵殑 MSPM0 鑺墖</td>
-<td>鈥?/td>
+<td><strong>目标</strong></td>
+<td>你的 MSPM0 芯片</td>
+<td>—</td>
 </tr>
 </tbody></table>
-<p>鏁翠釜娴佺▼鍙互杩欐牱鐞嗚В锛?/p>
+<p>整个流程可以这样理解：</p>
 <blockquote>
-<p>浣犵偣鍑烩€濈儳褰曗€?鈫?VSCode 璋冪敤 <strong>鐑у綍杞欢</strong>锛圤penOCD 鎴?JLink GDB Server锛夆啋 鐑у綍杞欢閫氳繃 USB 鎶?<code>.elf</code> 鏂囦欢鍙戠粰<strong>鐑у綍鍣?/strong> 鈫?鐑у綍鍣ㄦ寜鑺墖鑳芥噦鐨勫崗璁妸鏁版嵁鍐欏叆鑺墖闂瓨銆?/p>
+<p>你点击”烧录” → VSCode 调用 <strong>烧录软件</strong>（OpenOCD 或 JLink GDB Server）→ 烧录软件通过 USB 把 <code>.elf</code> 文件发给<strong>烧录器</strong> → 烧录器按芯片能懂的协议把数据写入芯片闪存。</p>
 </blockquote>
-<p>鐑у綍杞欢鏈変袱鏉¤矾寰勶細</p>
+<p>烧录软件有两条路径：</p>
 <ul>
-<li><strong>CMSIS-DAP &#x2F; XDS110</strong>锛氫娇鐢?<strong>OpenOCD</strong>鈥斺€斿紑婧愪竾鑳界炕璇戝畼锛屾敮鎸佸绉嶇儳褰曞櫒鍗忚</li>
-<li><strong>JLink</strong>锛氫娇鐢?<strong>Segger 鍘熺敓 GDB Server</strong>鈥斺€斿畼鏂逛笓鐢ㄥ伐鍏凤紝鏇寸ǔ瀹氾紝鏃犻渶 OpenOCD</li>
+<li><strong>CMSIS-DAP &#x2F; XDS110</strong>：使用 <strong>OpenOCD</strong>——开源万能翻译官，支持多种烧录器协议</li>
+<li><strong>JLink</strong>：使用 <strong>Segger 原生 GDB Server</strong>——官方专用工具，更稳定，无需 OpenOCD</li>
 </ul>
 <hr>
-<h5 id="鈶?璋冭瘯-鈥?涓€姝ヤ竴姝ョ洃鎺т唬鐮佽繍琛?><a href="#鈶?璋冭瘯-鈥?涓€姝ヤ竴姝ョ洃鎺т唬鐮佽繍琛? class="headerlink" title="鈶?璋冭瘯 鈥?涓€姝ヤ竴姝ョ洃鎺т唬鐮佽繍琛?></a>鈶?璋冭瘯 鈥?涓€姝ヤ竴姝ョ洃鎺т唬鐮佽繍琛?/h5><p>浠ｇ爜鐑ц繘鍘讳箣鍚庯紝鑳界湅鍒拌繍琛岀粨鏋溿€備絾濡傛灉浣犳兂<strong>涓€姝ヤ竴姝ヨ窡韪唬鐮?/strong>銆佽瀵熷瘎瀛樺櫒鏁版嵁銆佽缃柇鐐光€斺€旇繖灏辨槸<strong>璋冭瘯</strong>銆?/p>
-<p>璋冭瘯鐨勯€氫俊閾捐矾鍥犺皟璇曞櫒鑰屽紓锛?/p>
-<p><strong>璺緞涓€锛欳MSIS-DAP &#x2F; XDS110锛堥€氳繃 OpenOCD锛?/strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">VSCode (浣犳搷浣滅殑鐣岄潰)</span><br><span class="line">  鈹? 閫氳繃 MI 鍗忚涓?GDB 閫氫俊</span><br><span class="line">  鈻?/span><br><span class="line">arm-none-eabi-gdb (璋冭瘯瀹㈡埛绔?</span><br><span class="line">  鈹? 鍙戦€佽皟璇曞懡浠わ紙鏆傚仠銆佽鍙栧瘎瀛樺櫒銆佽缃柇鐐?..锛?/span><br><span class="line">  鈻?/span><br><span class="line">OpenOCD (璋冭瘯鏈嶅姟鍣?</span><br><span class="line">  鈹? 鎶婂懡浠ょ炕璇戞垚鐑у綍鍣ㄨ兘鎳傜殑鍗忚</span><br><span class="line">  鈻?/span><br><span class="line">鐑у綍鍣?/ 璋冭瘯鍣?(纭欢)</span><br><span class="line">  鈹? 閫氳繃 SWD/JTAG 涓庤姱鐗囬€氫俊</span><br><span class="line">  鈻?/span><br><span class="line">浣犵殑 MSPM0 鑺墖</span><br></pre></td></tr></table></figure>
+<h5 id="④-调试-—-一步一步监控代码运行"><a href="#④-调试-—-一步一步监控代码运行" class="headerlink" title="④ 调试 — 一步一步监控代码运行"></a>④ 调试 — 一步一步监控代码运行</h5><p>代码烧进去之后，能看到运行结果。但如果你想<strong>一步一步跟踪代码</strong>、观察寄存器数据、设置断点——这就是<strong>调试</strong>。</p>
+<p>调试的通信链路因调试器而异：</p>
+<p><strong>路径一：CMSIS-DAP &#x2F; XDS110（通过 OpenOCD）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">VSCode (你操作的界面)</span><br><span class="line">  │  通过 MI 协议与 GDB 通信</span><br><span class="line">  ▼</span><br><span class="line">arm-none-eabi-gdb (调试客户端)</span><br><span class="line">  │  发送调试命令（暂停、读取寄存器、设置断点...）</span><br><span class="line">  ▼</span><br><span class="line">OpenOCD (调试服务器)</span><br><span class="line">  │  把命令翻译成烧录器能懂的协议</span><br><span class="line">  ▼</span><br><span class="line">烧录器 / 调试器 (硬件)</span><br><span class="line">  │  通过 SWD/JTAG 与芯片通信</span><br><span class="line">  ▼</span><br><span class="line">你的 MSPM0 芯片</span><br></pre></td></tr></table></figure>
 
-<p><strong>璺緞浜岋細JLink锛堥€氳繃 Segger 鍘熺敓 GDB Server锛屾棤闇€ OpenOCD锛?/strong></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">VSCode (浣犳搷浣滅殑鐣岄潰)</span><br><span class="line">  鈹? 閫氳繃 MI 鍗忚涓?GDB 閫氫俊</span><br><span class="line">  鈻?/span><br><span class="line">arm-none-eabi-gdb (璋冭瘯瀹㈡埛绔?</span><br><span class="line">  鈹? 鍙戦€佽皟璇曞懡浠?/span><br><span class="line">  鈻?/span><br><span class="line">JLink GDB Server (Segger 鍘熺敓璋冭瘯鏈嶅姟鍣?</span><br><span class="line">  鈹? 鐩存帴涓?JLink 纭欢閫氫俊</span><br><span class="line">  鈻?/span><br><span class="line">JLink 璋冭瘯鍣?(纭欢)</span><br><span class="line">  鈹? 閫氳繃 SWD/JTAG 涓庤姱鐗囬€氫俊</span><br><span class="line">  鈻?/span><br><span class="line">浣犵殑 MSPM0 鑺墖</span><br></pre></td></tr></table></figure>
+<p><strong>路径二：JLink（通过 Segger 原生 GDB Server，无需 OpenOCD）</strong></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">VSCode (你操作的界面)</span><br><span class="line">  │  通过 MI 协议与 GDB 通信</span><br><span class="line">  ▼</span><br><span class="line">arm-none-eabi-gdb (调试客户端)</span><br><span class="line">  │  发送调试命令</span><br><span class="line">  ▼</span><br><span class="line">JLink GDB Server (Segger 原生调试服务器)</span><br><span class="line">  │  直接与 JLink 硬件通信</span><br><span class="line">  ▼</span><br><span class="line">JLink 调试器 (硬件)</span><br><span class="line">  │  通过 SWD/JTAG 与芯片通信</span><br><span class="line">  ▼</span><br><span class="line">你的 MSPM0 芯片</span><br></pre></td></tr></table></figure>
 
-<p>绠€鍗曟潵璇达細</p>
+<p>简单来说：</p>
 <blockquote>
-<p><strong>GDB</strong> 鏄€濆彂鍙锋柦浠ょ殑浜衡€濃€斺€斾綘鎯崇湅浠€涔堛€佸仠鍦ㄥ摢閲岋紝鐢卞畠璇翠簡绠椼€?strong>OpenOCD 鎴?JLink GDB Server</strong> 鏄€濅紶璇濈瓛鈥濃€斺€旀妸 GDB 鐨勬寚浠ょ炕璇戝悗浜ょ粰纭欢锛屽啀鎶婅姱鐗囩殑鍝嶅簲浼犲洖鏉ャ€傚尯鍒湪浜?JLink 璧拌嚜宸辩殑鍘熺敓閫氶亾锛屾洿绋冲畾銆佸欢杩熸洿浣庛€?/p>
+<p><strong>GDB</strong> 是”发号施令的人”——你想看什么、停在哪里，由它说了算。<strong>OpenOCD 或 JLink GDB Server</strong> 是”传话筒”——把 GDB 的指令翻译后交给硬件，再把芯片的响应传回来。区别在于 JLink 走自己的原生通道，更稳定、延迟更低。</p>
 </blockquote>
 <hr>
-<h5 id="鈶?椤圭洰缁勭粐-CMake"><a href="#鈶?椤圭洰缁勭粐-CMake" class="headerlink" title="鈶?椤圭洰缁勭粐 &amp; CMake"></a>鈶?椤圭洰缁勭粐 &amp; CMake</h5><p>闄や簡缂栬瘧-鐑у綍-璋冭瘯杩欐潯绾匡紝<strong>椤圭洰缁撴瀯</strong>鍚屾牱閲嶈銆備竴涓ソ鐨勭洰褰曞竷灞€鎰忓懗鐫€浠ｇ爜鏄撹銆佹槗缁存姢銆佹槗澶嶇敤鈥斺€斿挨鍏跺湪鐢佃禌杩欑楂樺帇鐜涓嬶紝楂樺鐢ㄦ€у氨鏄€熷害銆?/p>
-<p>涓轰簡绠＄悊椤圭洰缁撴瀯鍜岀紪璇戣繃绋嬶紝鎴戜滑浣跨敤 <strong>CMake</strong>锛?/p>
+<h5 id="⑤-项目组织-CMake"><a href="#⑤-项目组织-CMake" class="headerlink" title="⑤ 项目组织 &amp; CMake"></a>⑤ 项目组织 &amp; CMake</h5><p>除了编译-烧录-调试这条线，<strong>项目结构</strong>同样重要。一个好的目录布局意味着代码易读、易维护、易复用——尤其在电赛这种高压环境下，高复用性就是速度。</p>
+<p>为了管理项目结构和编译过程，我们使用 <strong>CMake</strong>：</p>
 <blockquote>
-<p><strong>CMake</strong> 涓嶆槸缂栬瘧鍣紝鑰屾槸鈥濈紪璇戣鍒欏埗瀹氳€呪€濄€備綘鍛婅瘔瀹冣€濇簮鏂囦欢鍦ㄥ摢銆佸ご鏂囦欢鍦ㄥ摢銆佺敤浠€涔堢紪璇戝櫒鈥濓紝瀹冭嚜鍔ㄧ敓鎴愭瀯寤烘枃浠讹紙濡?Makefile 鎴?Ninja 鏂囦欢锛夛紝鐒跺悗鐢?<strong>Ninja</strong>锛堟垨 <code>make</code>锛夋寜杩欎唤鈥濊繍琛屾寚鍗椻€濆幓璋冪敤缂栬瘧鍣紝鏈€缁堢敓鎴愬彲鎵ц鏂囦欢銆?/p>
+<p><strong>CMake</strong> 不是编译器，而是”编译规则制定者”。你告诉它”源文件在哪、头文件在哪、用什么编译器”，它自动生成构建文件（如 Makefile 或 Ninja 文件），然后由 <strong>Ninja</strong>（或 <code>make</code>）按这份”运行指南”去调用编译器，最终生成可执行文件。</p>
 </blockquote>
 <hr>
-<h5 id="馃搵-瑙掕壊閫熸煡琛?><a href="#馃搵-瑙掕壊閫熸煡琛? class="headerlink" title="馃搵 瑙掕壊閫熸煡琛?></a>馃搵 瑙掕壊閫熸煡琛?/h5><table>
+<h5 id="📋-角色速查表"><a href="#📋-角色速查表" class="headerlink" title="📋 角色速查表"></a>📋 角色速查表</h5><table>
 <thead>
 <tr>
-<th>瑙掕壊</th>
-<th>宸ュ叿</th>
-<th>涓€鍙ヨ瘽瑙ｉ噴</th>
+<th>角色</th>
+<th>工具</th>
+<th>一句话解释</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>缂栬瘧鍣?/td>
+<td>编译器</td>
 <td><code>arm-none-eabi-gcc</code></td>
-<td>鎶?C 浠ｇ爜鍙樻垚 <code>.elf</code> 浜岃繘鍒舵枃浠?/td>
+<td>把 C 代码变成 <code>.elf</code> 二进制文件</td>
 </tr>
 <tr>
-<td>鏋勫缓绯荤粺</td>
+<td>构建系统</td>
 <td><strong>CMake</strong></td>
-<td>绠＄悊椤圭洰缁撴瀯锛岀敓鎴愭瀯寤鸿鍒?/td>
+<td>管理项目结构，生成构建规则</td>
 </tr>
 <tr>
-<td>鏋勫缓鍣?/td>
+<td>构建器</td>
 <td><strong>Ninja</strong> &#x2F; <code>make</code></td>
-<td>鎸?CMake 鐨勮鍒欏疄闄呮墽琛岀紪璇?/td>
+<td>按 CMake 的规则实际执行编译</td>
 </tr>
 <tr>
-<td>鐑у綍&#x2F;璋冭瘯鏈嶅姟鍣?/td>
-<td><strong>OpenOCD</strong>锛圕MSIS-DAP&#x2F;XDS110锛?/td>
-<td>涓庣儳褰曞櫒閫氫俊锛岀儳褰?+ 璋冭瘯涓浆</td>
+<td>烧录&#x2F;调试服务器</td>
+<td><strong>OpenOCD</strong>（CMSIS-DAP&#x2F;XDS110）</td>
+<td>与烧录器通信，烧录 + 调试中转</td>
 </tr>
 <tr>
-<td>鐑у綍&#x2F;璋冭瘯鏈嶅姟鍣?/td>
-<td><strong>JLink GDB Server</strong>锛圝Link锛?/td>
-<td>Segger 鍘熺敓 GDB Server锛岀儳褰?+ 璋冭瘯涓浆</td>
+<td>烧录&#x2F;调试服务器</td>
+<td><strong>JLink GDB Server</strong>（JLink）</td>
+<td>Segger 原生 GDB Server，烧录 + 调试中转</td>
 </tr>
 <tr>
-<td>璋冭瘯瀹㈡埛绔?/td>
+<td>调试客户端</td>
 <td><code>arm-none-eabi-gdb</code></td>
-<td>鍙戣皟璇曞懡浠ゃ€佹敹鑺墖鍝嶅簲</td>
+<td>发调试命令、收芯片响应</td>
 </tr>
 <tr>
-<td>鍥惧舰鍖栭厤缃?/td>
+<td>图形化配置</td>
 <td><strong>SysConfig</strong></td>
-<td>TI 瀹樻柟寮曡剼&#x2F;鏃堕挓&#x2F;澶栬 GUI</td>
+<td>TI 官方引脚&#x2F;时钟&#x2F;外设 GUI</td>
 </tr>
 </tbody></table>
 <hr>
-<p>濂戒簡锛屾蹇电悊娓呬簡锛屼笅闈㈠紑濮嬫寜椤哄簭瀹夎鍜岄厤缃€傛瘡涓€姝ラ兘鏈変簡鎰忎箟銆?/p>
-<h4 id="1锛塒ython"><a href="#1锛塒ython" class="headerlink" title="1锛塒ython"></a>1锛塒ython</h4><p>闇€瑕佸畨瑁?Python 3.9 鍙婁互涓婄増鏈€傝剼鏈湰韬氨鏄敤 Python 缂栧啓鐨勶紝鎵€浠ヨ繖鏄渶鍩虹鐨勮繍琛岀幆澧冦€?/p>
-<p>鎺ㄨ崘鐩存帴浣跨敤 <a target="_blank" rel="noopener" href="https://www.python.org/downloads/">python.org</a> 鐨勫畨瑁呭寘锛屾垨鑰呴€氳繃 <code>winget</code> 瀹夎锛?/p>
+<p>好了，概念理清了，下面开始按顺序安装和配置。每一步都有了意义。</p>
+<h4 id="1）Python"><a href="#1）Python" class="headerlink" title="1）Python"></a>1）Python</h4><p>需要安装 Python 3.9 及以上版本。脚本本身就是用 Python 编写的，所以这是最基础的运行环境。</p>
+<p>推荐直接使用 <a target="_blank" rel="noopener" href="https://www.python.org/downloads/">python.org</a> 的安装包，或者通过 <code>winget</code> 安装：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">winget install Python.Python.<span class="number">3.12</span></span><br></pre></td></tr></table></figure>
 
-<p>瀹夎瀹屾垚鍚庯紝璁板緱鍦ㄥ懡浠よ涓‘璁?<code>python</code> 鍜?<code>pip</code> 鍙敤銆?/p>
-<h4 id="2锛堿RM-GCC-浜ゅ弶缂栬瘧宸ュ叿閾?><a href="#2锛堿RM-GCC-浜ゅ弶缂栬瘧宸ュ叿閾? class="headerlink" title="2锛堿RM GCC 浜ゅ弶缂栬瘧宸ュ叿閾?></a>2锛堿RM GCC 浜ゅ弶缂栬瘧宸ュ叿閾?/h4><p>杩欐槸鐢ㄦ潵缂栬瘧 MSPM0 宸ョ▼鐨勭紪璇戝櫒锛屽缓璁畨瑁?ARM GNU Toolchain 15.x锛岃繖涓綔涓虹‖缂栫爜杩涜剼鏈殑榛樿缂栬瘧鍣紝鏆傛椂涓嶆敮鎸佸叾浠栫紪璇戝櫒锛屽悗缁細鑰冭檻鏀寔鏇村缂栬瘧鍣ㄣ€?/p>
-<p>瀵逛簬浠庢潵娌℃湁瀹夎杩?C&#x2F;C++ 寮€鍙戠幆澧冪殑鐢ㄦ埛鏉ヨ锛?strong>鎺ㄨ崘鍏堝畨瑁?MSys2</strong>锛屽畠鑷甫浜嗗寘绠＄悊鍣?pacman锛屽悗缁畨瑁?CMake銆丯inja銆丟it 绛夊伐鍏烽兘闈炲父鏂逛究銆傚浜庢湁缁忛獙鐨勭敤鎴凤紝涔熷彲浠ヤ粠 STM32CubeIDE 鎴栧叾浠栧祵鍏ュ紡寮€鍙戠幆澧冧腑鎻愬彇 <code>arm-none-eabi-gcc</code> 宸ュ叿閾撅紝灏嗗叾 <code>bin/</code> 鐩綍鍔犲埌绯荤粺 PATH 涓嵆鍙紝纭繚鑳藉浠庣粓绔洿鎺ユ壘鍒?<code>arm-none-eabi-gcc</code>銆?/p>
-<p>杩欓噷鎻愪緵鍑犵瀹夎鏂瑰紡锛?/p>
+<p>安装完成后，记得在命令行中确认 <code>python</code> 和 <code>pip</code> 可用。</p>
+<h4 id="2）ARM-GCC-交叉编译工具链"><a href="#2）ARM-GCC-交叉编译工具链" class="headerlink" title="2）ARM GCC 交叉编译工具链"></a>2）ARM GCC 交叉编译工具链</h4><p>这是用来编译 MSPM0 工程的编译器，建议安装 ARM GNU Toolchain 15.x，这个作为硬编码进脚本的默认编译器，暂时不支持其他编译器，后续会考虑支持更多编译器。</p>
+<p>对于从来没有安装过 C&#x2F;C++ 开发环境的用户来说，<strong>推荐先安装 MSys2</strong>，它自带了包管理器 pacman，后续安装 CMake、Ninja、Git 等工具都非常方便。对于有经验的用户，也可以从 STM32CubeIDE 或其他嵌入式开发环境中提取 <code>arm-none-eabi-gcc</code> 工具链，将其 <code>bin/</code> 目录加到系统 PATH 中即可，确保能够从终端直接找到 <code>arm-none-eabi-gcc</code>。</p>
+<p>这里提供几种安装方式：</p>
 <ul>
-<li><p><strong>鏂瑰紡涓€锛堟帹鑽?鈥?MSys2锛?/strong>锛氬鏋滀綘宸插畨瑁?MSys2锛屽湪 MSys2 缁堢涓墽琛岋細</p>
+<li><p><strong>方式一（推荐 — MSys2）</strong>：如果你已安装 MSys2，在 MSys2 终端中执行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pacman -S mingw-w64-x86_64-arm-none-eabi-toolchain</span><br></pre></td></tr></table></figure>
-<p>閫夋嫨鍏ㄩ儴瀹夎鍗冲彲锛屽畬鎴愬悗灏?MSys2 鐨?<code>mingw64/bin/</code> 鍔犲叆绯荤粺 PATH銆?/p>
+<p>选择全部安装即可，完成后将 MSys2 的 <code>mingw64/bin/</code> 加入系统 PATH。</p>
 </li>
-<li><p><strong>鏂瑰紡浜岋紙鐩存帴涓嬭浇 鈥?ARM 瀹樼綉锛?/strong>锛氫粠 ARM 瀹樼綉涓嬭浇 <code>.msi</code> 瀹夎鍖咃紝瀹夎鏃跺嬀閫夆€濇坊鍔犲埌绯荤粺 PATH鈥濓細</p>
+<li><p><strong>方式二（直接下载 — ARM 官网）</strong>：从 ARM 官网下载 <code>.msi</code> 安装包，安装时勾选”添加到系统 PATH”：</p>
 <ul>
 <li><a target="_blank" rel="noopener" href="https://gitlab.arm.com/api/v4/projects/tooling%2Fgnu-toolchains-for-arm/packages/generic/gnu-toolchain/15.3.rel1/arm-gnu-toolchain-15.3.rel1-mingw-w64-i686-arm-none-eabi.msi">ARM GNU Toolchain 15.3.rel1 for Windows (i686-mingw-w64)</a></li>
-<li>瀹夎瀹屾垚鍚庯紝鍦ㄧ粓绔繍琛?<code>arm-none-eabi-gcc --version</code> 纭鐗堟湰鍙枫€?/li>
+<li>安装完成后，在终端运行 <code>arm-none-eabi-gcc --version</code> 确认版本号。</li>
 </ul>
 </li>
-<li><p><strong>鏂瑰紡涓夛紙宸叉湁鍏朵粬 IDE锛?/strong>锛氬鏋滀綘瀹夎浜?STM32CubeIDE銆並eil 绛夛紝瀹冧滑閫氬父鑷甫浜?ARM GCC 宸ュ叿閾撅紝鎵惧埌瀵瑰簲鐨?<code>bin/</code> 鐩綍锛堝 <code>C:\ST\STM32CubeIDE\...\arm-none-eabi\bin</code>锛夛紝灏嗗叾鍔犲叆绯荤粺 PATH 鍗冲彲銆?/p>
+<li><p><strong>方式三（已有其他 IDE）</strong>：如果你安装了 STM32CubeIDE、Keil 等，它们通常自带了 ARM GCC 工具链，找到对应的 <code>bin/</code> 目录（如 <code>C:\ST\STM32CubeIDE\...\arm-none-eabi\bin</code>），将其加入系统 PATH 即可。</p>
 </li>
 </ul>
-<p>楠岃瘉瀹夎锛?/p>
+<p>验证安装：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arm<span class="literal">-none-eabi-gcc</span> <span class="literal">--version</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="3锛塁Make-涓?Ninja"><a href="#3锛塁Make-涓?Ninja" class="headerlink" title="3锛塁Make 涓?Ninja"></a>3锛塁Make 涓?Ninja</h4><p>CMake 璐熻矗鐢熸垚宸ョ▼鏋勫缓鏂囦欢锛孨inja 璐熻矗鏇村揩鍦板畬鎴愭瀯寤恒€傚缓璁袱鑰呴兘瀹夎锛岀増鏈姹傚垎鍒繚鎸佸湪 CMake 3.13 浠ヤ笂銆丯inja 浠绘剰鍙敤鐗堟湰鍗冲彲銆?/p>
-<p>甯歌瀹夎鏂瑰紡濡備笅锛?/p>
+<h4 id="3）CMake-与-Ninja"><a href="#3）CMake-与-Ninja" class="headerlink" title="3）CMake 与 Ninja"></a>3）CMake 与 Ninja</h4><p>CMake 负责生成工程构建文件，Ninja 负责更快地完成构建。建议两者都安装，版本要求分别保持在 CMake 3.13 以上、Ninja 任意可用版本即可。</p>
+<p>常见安装方式如下：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">winget install Kitware.CMake</span><br><span class="line">winget install Ninja<span class="literal">-build</span>.Ninja</span><br></pre></td></tr></table></figure>
 
-<p>涔熷彲浠ヤ娇鐢∕inGW鎴朚Sys2绛夊寘绠＄悊鍣ㄥ畨瑁咃紝纭繚 <code>cmake</code> 鍜?<code>ninja</code> 鍛戒护鍦ㄧ粓绔腑鍙敤銆?/p>
-<h4 id="4锛塗I-MSPM0-SDK"><a href="#4锛塗I-MSPM0-SDK" class="headerlink" title="4锛塗I MSPM0 SDK"></a>4锛塗I MSPM0 SDK</h4><p>杩欐槸 TI 瀹樻柟鎻愪緵鐨?MSPM0 杞欢寮€鍙戝浠讹紝閲岄潰鍖呭惈椹卞姩搴撱€佸惎鍔ㄦ枃浠躲€丆MSIS 鐩稿叧鍐呭锛屼互鍙婇」鐩瀯寤烘墍闇€鐨勫悇绉嶅簳灞傝祫婧愩€?/p>
-<p>涓嬭浇鍚庝竴鑸В鍘嬪埌 <code>C:\ti\</code>锛屼緥濡?<code>C:\ti\mspm0_sdk_2_10_00_04</code>銆傝剼鏈細鑷姩鎼滅储锛屼篃鍙互閫氳繃鐜鍙橀噺鎵嬪姩鎸囧畾銆?/p>
+<p>也可以使用MinGW或MSys2等包管理器安装，确保 <code>cmake</code> 和 <code>ninja</code> 命令在终端中可用。</p>
+<h4 id="4）TI-MSPM0-SDK"><a href="#4）TI-MSPM0-SDK" class="headerlink" title="4）TI MSPM0 SDK"></a>4）TI MSPM0 SDK</h4><p>这是 TI 官方提供的 MSPM0 软件开发套件，里面包含驱动库、启动文件、CMSIS 相关内容，以及项目构建所需的各种底层资源。</p>
+<p>下载后一般解压到 <code>C:\ti\</code>，例如 <code>C:\ti\mspm0_sdk_2_10_00_04</code>。脚本会自动搜索，也可以通过环境变量手动指定。</p>
 <blockquote>
-<p><strong>鈴?鎻愮ず</strong>锛歋DK 瀹夎鍖呰緝澶э紝涓嬭浇鍜屽畨瑁呴渶瑕佷竴浜涙椂闂淬€傚湪姝ゆ湡闂翠綘鍙互鍚屾椂杩涜涓嬩竴姝?SysConfig 鐨勪笅杞姐€佷互鍙?OpenOCD&#x2F;GDB锛堢 6 姝ワ級鐨?VSCode 鎻掍欢瀹夎锛岃妭鐪佺瓑寰呮椂闂淬€?/p>
+<p><strong>⏳ 提示</strong>：SDK 安装包较大，下载和安装需要一些时间。在此期间你可以同时进行下一步 SysConfig 的下载、以及 OpenOCD&#x2F;GDB（第 6 步）的 VSCode 插件安装，节省等待时间。</p>
 </blockquote>
-<h4 id="5锛塗I-SysConfig"><a href="#5锛塗I-SysConfig" class="headerlink" title="5锛塗I SysConfig"></a>5锛塗I SysConfig</h4><p>SysConfig 鏄?TI 瀹樻柟鐨勫浘褰㈠寲閰嶇疆宸ュ叿锛岀敤鏉ラ厤缃姱鐗囧瀷鍙枫€佸紩鑴氬鐢ㄣ€佹椂閽熷拰澶栬鍙傛暟銆傝剼鏈細璋冪敤瀹冪殑 CLI 鑷姩鐢熸垚 <code>ti_msp_dl_config.c/h</code> 鍜岄摼鎺ヨ剼鏈紝鎵€浠ヨ繖鏄繀椤诲畨瑁呯殑銆?/p>
-<p>鍚屾牱寤鸿瑙ｅ帇鍒?<code>C:\ti\</code> 涓嬶紝渚嬪 <code>C:\ti\sysconfig_1.27.1</code>銆?/p>
+<h4 id="5）TI-SysConfig"><a href="#5）TI-SysConfig" class="headerlink" title="5）TI SysConfig"></a>5）TI SysConfig</h4><p>SysConfig 是 TI 官方的图形化配置工具，用来配置芯片型号、引脚复用、时钟和外设参数。脚本会调用它的 CLI 自动生成 <code>ti_msp_dl_config.c/h</code> 和链接脚本，所以这是必须安装的。</p>
+<p>同样建议解压到 <code>C:\ti\</code> 下，例如 <code>C:\ti\sysconfig_1.27.1</code>。</p>
 <blockquote>
-<p><strong>馃挕 璺緞寤鸿</strong>锛氭帹鑽愬皢 SDK 鍜?SysConfig 鏀惧湪鍚屼竴涓洰褰曪紙濡?<code>E:\ti\</code> 鎴?<code>C:\ti\</code>锛変笅锛屾柟渚跨鐞嗐€傚鏋滀綘鐨?C 鐩樼┖闂寸揣寮狅紝鍙互鏀惧埌鍏朵粬鐩樼鈥斺€斿彧瑕侀厤缃ソ鐜鍙橀噺锛孴PA 灏辫兘鎵惧埌銆傛敞鎰忓畨瑁呰矾寰勪笉瑕佸寘鍚腑鏂囥€?/p>
+<p><strong>💡 路径建议</strong>：推荐将 SDK 和 SysConfig 放在同一个目录（如 <code>E:\ti\</code> 或 <code>C:\ti\</code>）下，方便管理。如果你的 C 盘空间紧张，可以放到其他盘符——只要配置好环境变量，TPA 就能找到。注意安装路径不要包含中文。</p>
 </blockquote>
-<h4 id="6锛塐penOCD-鍜?arm-none-eabi-gdb锛圕MSIS-DAP-XDS110-蹇呰锛孞Link-鐢ㄦ埛鍙€夛級"><a href="#6锛塐penOCD-鍜?arm-none-eabi-gdb锛圕MSIS-DAP-XDS110-蹇呰锛孞Link-鐢ㄦ埛鍙€夛級" class="headerlink" title="6锛塐penOCD 鍜?arm-none-eabi-gdb锛圕MSIS-DAP &#x2F; XDS110 蹇呰锛孞Link 鐢ㄦ埛鍙€夛級"></a>6锛塐penOCD 鍜?arm-none-eabi-gdb锛圕MSIS-DAP &#x2F; XDS110 蹇呰锛孞Link 鐢ㄦ埛鍙€夛級</h4><blockquote>
-<p><strong>鈿狅笍 v1.0.0 閲嶈鍙樻洿</strong>锛氬鏋滀綘浣跨敤 <strong>JLink</strong> 璋冭瘯鍣紝鍙互瀹屽叏璺宠繃 OpenOCD鈥斺€擩Link 浣跨敤 Segger 鍘熺敓 GDB Server銆傚鏋滀綘浣跨敤 CMSIS-DAP 鎴?XDS110锛孫penOCD 浠嶇劧鏄繀椤荤殑銆?/p>
+<h4 id="6）OpenOCD-和-arm-none-eabi-gdb（CMSIS-DAP-XDS110-必装，JLink-用户可选）"><a href="#6）OpenOCD-和-arm-none-eabi-gdb（CMSIS-DAP-XDS110-必装，JLink-用户可选）" class="headerlink" title="6）OpenOCD 和 arm-none-eabi-gdb（CMSIS-DAP &#x2F; XDS110 必装，JLink 用户可选）"></a>6）OpenOCD 和 arm-none-eabi-gdb（CMSIS-DAP &#x2F; XDS110 必装，JLink 用户可选）</h4><blockquote>
+<p><strong>⚠️ v1.0.0 重要变更</strong>：如果你使用 <strong>JLink</strong> 调试器，可以完全跳过 OpenOCD——JLink 使用 Segger 原生 GDB Server。如果你使用 CMSIS-DAP 或 XDS110，OpenOCD 仍然是必须的。</p>
 </blockquote>
-<p>杩欎袱涓伐鍏蜂富瑕佺敤浜庣儳褰曞拰璋冭瘯銆侽penOCD 璐熻矗鍜屾澘瀛愰€氫俊锛孏DB 璐熻矗婧愮爜绾ц皟璇曘€?/p>
-<p><strong>鎺ㄨ崘鏂瑰紡</strong>锛氶€氳繃 TI 瀹樻柟 VSCode 鎻掍欢鑷姩瀹夎锛屾彃浠朵細鑷姩涓嬭浇 TI 瀹氬埗鐗?OpenOCD 鍜?GDB 骞舵斁缃湪鐗瑰畾鐩綍涓紝TPA 鑴氭湰浼氳嚜鍔ㄥ彂鐜般€?/p>
-<p>鎿嶄綔锛氬湪 VSCode 鎻掍欢甯傚満鎼滅储 <code>TI Embedded Development For VS Code</code>锛屽畨瑁呭畬鎴愬悗浠庝晶杈规爮閫夋嫨瀹夎鎵€鏈変緷璧栵紝鎴栦粠鍙充笅瑙掑脊绐椾腑瀹夎銆?/p>
+<p>这两个工具主要用于烧录和调试。OpenOCD 负责和板子通信，GDB 负责源码级调试。</p>
+<p><strong>推荐方式</strong>：通过 TI 官方 VSCode 插件自动安装，插件会自动下载 TI 定制版 OpenOCD 和 GDB 并放置在特定目录中，TPA 脚本会自动发现。</p>
+<p>操作：在 VSCode 插件市场搜索 <code>TI Embedded Development For VS Code</code>，安装完成后从侧边栏选择安装所有依赖，或从右下角弹窗中安装。</p>
 <blockquote>
-<p><strong>馃寪 缃戠粶闂澶囬€夋柟妗?/strong>锛氬鏋滀綘鍦?VSCode 鎻掍欢涓笅杞戒緷璧栨椂閬囧埌缃戠粶闂锛堜笅杞界紦鎱㈡垨鍙嶅澶辫触锛夛紝鍙互鎵嬪姩浠?TI 瀹樼綉涓嬭浇 OpenOCD锛?/p>
+<p><strong>🌐 网络问题备选方案</strong>：如果你在 VSCode 插件中下载依赖时遇到网络问题（下载缓慢或反复失败），可以手动从 TI 官网下载 OpenOCD：</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.ti.com.cn/tool/cn/download/CCSTUDIO-OPENOCD/1.5.0">TI CCStudio OpenOCD 1.5.0 涓嬭浇</a></li>
-<li>涓嬭浇瀵瑰簲骞冲彴鐨勫畨瑁呭寘锛岃В鍘嬪悗灏?<code>bin/</code> 鐩綍鍔犲叆绯荤粺 PATH 鍗冲彲</li>
+<li><a target="_blank" rel="noopener" href="https://www.ti.com.cn/tool/cn/download/CCSTUDIO-OPENOCD/1.5.0">TI CCStudio OpenOCD 1.5.0 下载</a></li>
+<li>下载对应平台的安装包，解压后将 <code>bin/</code> 目录加入系统 PATH 即可</li>
 </ul>
 </blockquote>
-<p><strong>GDB 瀹夎鏂瑰紡</strong>鍙栧喅浜庝綘鐨?ARM GCC 鏉ユ簮锛?/p>
+<p><strong>GDB 安装方式</strong>取决于你的 ARM GCC 来源：</p>
 <table>
 <thead>
 <tr>
-<th>ARM GCC 鏉ユ簮</th>
-<th>GDB 瀹夎鏂瑰紡</th>
+<th>ARM GCC 来源</th>
+<th>GDB 安装方式</th>
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>MSys2锛坧acman 瀹夎锛?/strong></td>
-<td>鍦?MSys2 缁堢鎵ц <code>pacman -S mingw-w64-x86_64-gdb-multiarch</code></td>
+<td><strong>MSys2（pacman 安装）</strong></td>
+<td>在 MSys2 终端执行 <code>pacman -S mingw-w64-x86_64-gdb-multiarch</code></td>
 </tr>
 <tr>
-<td><strong>ARM 瀹樻柟 <code>.msi</code> 瀹夎鍖?/strong></td>
-<td>宸查殢缂栬瘧鍣ㄤ竴骞跺畨瑁咃紝鏃犻渶棰濆鎿嶄綔锛?code>bin/</code> 鐩綍涓嬭嚜甯?<code>arm-none-eabi-gdb.exe</code>锛?/td>
+<td><strong>ARM 官方 <code>.msi</code> 安装包</strong></td>
+<td>已随编译器一并安装，无需额外操作（<code>bin/</code> 目录下自带 <code>arm-none-eabi-gdb.exe</code>）</td>
 </tr>
 <tr>
-<td><strong>STM32CubeIDE &#x2F; Keil 鎻愬彇</strong></td>
-<td>妫€鏌ュ搴?<code>bin/</code> 鐩綍锛岄€氬父宸插寘鍚?<code>arm-none-eabi-gdb.exe</code></td>
+<td><strong>STM32CubeIDE &#x2F; Keil 提取</strong></td>
+<td>检查对应 <code>bin/</code> 目录，通常已包含 <code>arm-none-eabi-gdb.exe</code></td>
 </tr>
 </tbody></table>
-<p>楠岃瘉 GDB 瀹夎锛?/p>
+<p>验证 GDB 安装：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arm<span class="literal">-none-eabi-gdb</span> <span class="literal">--version</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="6-5锛塉Link-椹卞姩涓庡伐鍏凤紙JLink-鐢ㄦ埛蹇呰锛?><a href="#6-5锛塉Link-椹卞姩涓庡伐鍏凤紙JLink-鐢ㄦ埛蹇呰锛? class="headerlink" title="6.5锛塉Link 椹卞姩涓庡伐鍏凤紙JLink 鐢ㄦ埛蹇呰锛?></a>6.5锛塉Link 椹卞姩涓庡伐鍏凤紙JLink 鐢ㄦ埛蹇呰锛?/h4><p>濡傛灉浣犱娇鐢?JLink 璋冭瘯鍣紝闇€瑕佸畨瑁?Segger 瀹樻柟 JLink 杞欢鍖咃紙鐗堟湰 鈮?7.70 鎺ㄨ崘锛夛細</p>
+<h4 id="6-5）JLink-驱动与工具（JLink-用户必装）"><a href="#6-5）JLink-驱动与工具（JLink-用户必装）" class="headerlink" title="6.5）JLink 驱动与工具（JLink 用户必装）"></a>6.5）JLink 驱动与工具（JLink 用户必装）</h4><p>如果你使用 JLink 调试器，需要安装 Segger 官方 JLink 软件包（版本 ≥ 7.70 推荐）：</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.segger.com/downloads/jlink/">SEGGER JLink 涓嬭浇</a></li>
-<li>瀹夎鍚庨渶<strong>鎵嬪姩</strong>灏?JLink 鐨?<code>bin\</code> 鐩綍锛堝 <code>C:\Program Files\SEGGER\JLink\</code>) 鍔犲叆绯荤粺 PATH</li>
-<li>涔熷彲閫氳繃 <code>--jlink-path</code> 鍙傛暟鎴?<code>JLINK_DIR</code> 鐜鍙橀噺鎵嬪姩鎸囧畾锛岄伩鍏嶄慨鏀?PATH</li>
+<li><a target="_blank" rel="noopener" href="https://www.segger.com/downloads/jlink/">SEGGER JLink 下载</a></li>
+<li>安装后需<strong>手动</strong>将 JLink 的 <code>bin\</code> 目录（如 <code>C:\Program Files\SEGGER\JLink\</code>) 加入系统 PATH</li>
+<li>也可通过 <code>--jlink-path</code> 参数或 <code>JLINK_DIR</code> 环境变量手动指定，避免修改 PATH</li>
 </ul>
-<p>楠岃瘉瀹夎锛?/p>
+<p>验证安装：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">JLinkGDBServerCL <span class="literal">-version</span>   <span class="comment"># Windows</span></span><br><span class="line">JLinkGDBServer <span class="literal">-version</span>     <span class="comment"># Linux</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="7锛塗asks-Buttons-鎻掍欢锛堟帹鑽愶級"><a href="#7锛塗asks-Buttons-鎻掍欢锛堟帹鑽愶級" class="headerlink" title="7锛塗asks Buttons 鎻掍欢锛堟帹鑽愶級"></a>7锛塗asks Buttons 鎻掍欢锛堟帹鑽愶級</h4><p>涓轰簡鍦?VSCode 鐘舵€佹爮鑾峰緱涓€閿紪璇戙€佺儳褰曘€佽皟璇曠殑蹇嵎鎸夐挳锛屾帹鑽愬畨瑁?<strong>Tasks Buttons</strong> 鎻掍欢锛?/p>
-<p>鍦?VSCode 鎻掍欢甯傚満鎼滅储 <code>Tasks Buttons</code> 骞跺畨瑁呫€俆PA 鐢熸垚鐨勯」鐩凡棰勭疆浜?<code>tasks.json</code> 鍜?<code>settings.json</code>锛屽畨瑁呰鎻掍欢鍚庣姸鎬佹爮浼氳嚜鍔ㄥ嚭鐜?SysConfig &#x2F; Build &#x2F; Flash &#x2F; Clean 绛夊揩鎹锋搷浣滄寜閽€?/p>
-<p>鍏朵粬鎺ㄨ崘瀹夎鐨?VSCode 鎻掍欢杩樺寘鎷?C&#x2F;C++ 鎻掍欢鍜?Git 鐩稿叧鎻掍欢锛屽彲鎸夐渶鍦ㄦ彃浠跺競鍦烘悳绱㈠畨瑁呫€?/p>
-<h4 id="8锛塆it锛堝彲閫夛紝鎺ㄨ崘锛?><a href="#8锛塆it锛堝彲閫夛紝鎺ㄨ崘锛? class="headerlink" title="8锛塆it锛堝彲閫夛紝鎺ㄨ崘锛?></a>8锛塆it锛堝彲閫夛紝鎺ㄨ崘锛?/h4><p>濡傛灉浣犻渶瑕佽繘琛岀増鏈帶鍒跺拰澶氫汉鍗忎綔寮€鍙戯紝寤鸿瀹夎 Git锛?/p>
+<h4 id="7）Tasks-Buttons-插件（推荐）"><a href="#7）Tasks-Buttons-插件（推荐）" class="headerlink" title="7）Tasks Buttons 插件（推荐）"></a>7）Tasks Buttons 插件（推荐）</h4><p>为了在 VSCode 状态栏获得一键编译、烧录、调试的快捷按钮，推荐安装 <strong>Tasks Buttons</strong> 插件：</p>
+<p>在 VSCode 插件市场搜索 <code>Tasks Buttons</code> 并安装。TPA 生成的项目已预置了 <code>tasks.json</code> 和 <code>settings.json</code>，安装该插件后状态栏会自动出现 SysConfig &#x2F; Build &#x2F; Flash &#x2F; Clean 等快捷操作按钮。</p>
+<p>其他推荐安装的 VSCode 插件还包括 C&#x2F;C++ 插件和 Git 相关插件，可按需在插件市场搜索安装。</p>
+<h4 id="8）Git（可选，推荐）"><a href="#8）Git（可选，推荐）" class="headerlink" title="8）Git（可选，推荐）"></a>8）Git（可选，推荐）</h4><p>如果你需要进行版本控制和多人协作开发，建议安装 Git：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">winget install <span class="literal">--id</span> Git.Git <span class="literal">-e</span> <span class="literal">--source</span> winget</span><br></pre></td></tr></table></figure>
 
-<p>瀹夎瀹屾垚鍚庨獙璇侊細</p>
+<p>安装完成后验证：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git <span class="literal">--version</span></span><br></pre></td></tr></table></figure>
 
-<p>TPA 鍦ㄥ垱寤洪」鐩椂浼氳嚜鍔ㄦ娴?Git 鏄惁宸插畨瑁呪€斺€斿鏋滃彲鐢紝鑷姩鎵ц <code>git init</code> 骞剁敓鎴?<code>.gitignore</code>銆傚鏋滀綘纭畾涓嶉渶瑕?Git锛屽彲浠ュ湪鍒涘缓椤圭洰鏃舵坊鍔?<code>--no-git</code> 鍙傛暟璺宠繃銆?/p>
-<h4 id="9锛夋帹鑽愮殑鐜鍙橀噺"><a href="#9锛夋帹鑽愮殑鐜鍙橀噺" class="headerlink" title="9锛夋帹鑽愮殑鐜鍙橀噺"></a>9锛夋帹鑽愮殑鐜鍙橀噺</h4><p><strong>鍏ㄩ儴鍙€?/strong>銆備笉璁剧疆鏃讹紝TPA 浼氫粠 PATH 鑷姩鍙戠幇鍙墽琛屽伐鍏凤紝鎴栨悳绱?TI 宸ュ叿榛樿鐩綍銆?/p>
+<p>TPA 在创建项目时会自动检测 Git 是否已安装——如果可用，自动执行 <code>git init</code> 并生成 <code>.gitignore</code>。如果你确定不需要 Git，可以在创建项目时添加 <code>--no-git</code> 参数跳过。</p>
+<h4 id="9）推荐的环境变量"><a href="#9）推荐的环境变量" class="headerlink" title="9）推荐的环境变量"></a>9）推荐的环境变量</h4><p><strong>全部可选</strong>。不设置时，TPA 会从 PATH 自动发现可执行工具，或搜索 TI 工具默认目录。</p>
 <table>
 <thead>
 <tr>
-<th>鍙橀噺</th>
-<th>Windows 榛樿鍊?/th>
-<th>璇存槑</th>
+<th>变量</th>
+<th>Windows 默认值</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>MSPM0_SDK</code></td>
 <td><code>C:\ti\mspm0_sdk_*</code></td>
-<td>MSPM0 SDK 鏍圭洰褰?/td>
+<td>MSPM0 SDK 根目录</td>
 </tr>
 <tr>
 <td><code>SYSCONFIG_DIR</code></td>
 <td><code>C:\ti\sysconfig_*</code></td>
-<td>SysConfig 瀹夎鐩綍</td>
+<td>SysConfig 安装目录</td>
 </tr>
 <tr>
 <td><code>TI_ROOT</code></td>
 <td><code>C:\ti</code></td>
-<td>鎵€鏈?TI 宸ュ叿鐨勬牴鐩綍</td>
+<td>所有 TI 工具的根目录</td>
 </tr>
 <tr>
 <td><code>OPENOCD_DIR</code></td>
-<td>PATH 鈫?TI 鎻掍欢缂撳瓨</td>
-<td>OpenOCD 鐩綍锛圥ATH 浼樺厛锛?/td>
+<td>PATH → TI 插件缓存</td>
+<td>OpenOCD 目录（PATH 优先）</td>
 </tr>
 <tr>
 <td><code>GDB_DIR</code></td>
-<td>PATH 鈫?TI 鎻掍欢缂撳瓨</td>
-<td>GDB 鐩綍锛圥ATH 浼樺厛锛?/td>
+<td>PATH → TI 插件缓存</td>
+<td>GDB 目录（PATH 优先）</td>
 </tr>
 <tr>
 <td><code>JLINK_DIR</code></td>
-<td>PATH 鈫?<code>C:\Program Files\SEGGER\JLink</code></td>
-<td>JLink 瀹夎鐩綍锛圥ATH 浼樺厛锛?/td>
+<td>PATH → <code>C:\Program Files\SEGGER\JLink</code></td>
+<td>JLink 安装目录（PATH 优先）</td>
 </tr>
 </tbody></table>
-<p><strong>蹇€熻缃ず渚?/strong>锛圥owerShell锛夛細</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$env:MSPM0_SDK</span> = <span class="string">&quot;C:\ti\mspm0_sdk_2_10_00_04&quot;</span></span><br><span class="line"><span class="variable">$env:SYSCONFIG_DIR</span> = <span class="string">&quot;C:\ti\sysconfig_1.27.1&quot;</span></span><br><span class="line"><span class="variable">$env:TI_ROOT</span> = <span class="string">&quot;C:\ti&quot;</span></span><br><span class="line"><span class="comment"># 浠ヤ笅浠呭湪鑷姩鍙戠幇澶辫触鏃舵墜鍔ㄦ寚瀹?/span></span><br><span class="line"><span class="comment"># $env:OPENOCD_DIR = &quot;C:\ti\ccs_base\DebugServer&quot;</span></span><br><span class="line"><span class="comment"># $env:GDB_DIR = &quot;C:\ti\ccs_base\DebugServer\bin&quot;</span></span><br><span class="line"><span class="comment"># $env:JLINK_DIR = &quot;C:\Program Files\SEGGER\JLink&quot;</span></span><br></pre></td></tr></table></figure>
+<p><strong>快速设置示例</strong>（PowerShell）：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$env:MSPM0_SDK</span> = <span class="string">&quot;C:\ti\mspm0_sdk_2_10_00_04&quot;</span></span><br><span class="line"><span class="variable">$env:SYSCONFIG_DIR</span> = <span class="string">&quot;C:\ti\sysconfig_1.27.1&quot;</span></span><br><span class="line"><span class="variable">$env:TI_ROOT</span> = <span class="string">&quot;C:\ti&quot;</span></span><br><span class="line"><span class="comment"># 以下仅在自动发现失败时手动指定</span></span><br><span class="line"><span class="comment"># $env:OPENOCD_DIR = &quot;C:\ti\ccs_base\DebugServer&quot;</span></span><br><span class="line"><span class="comment"># $env:GDB_DIR = &quot;C:\ti\ccs_base\DebugServer\bin&quot;</span></span><br><span class="line"><span class="comment"># $env:JLINK_DIR = &quot;C:\Program Files\SEGGER\JLink&quot;</span></span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><strong>鏂版墜鎻愮ず</strong>锛氱幆澧冨彉閲忛厤缃槸寰堝鏂版墜鏈€瀹规槗鍗′綇鐨勫湴鏂广€傚湪 Windows 涓婏紝鍙互閫氳繃鈥濈郴缁熷睘鎬?鈫?鐜鍙橀噺鈥濆浘褰㈢晫闈㈡坊鍔狅紝涔熷彲浠ュ湪 PowerShell 涓娇鐢?<code>$env:</code> 鍓嶇紑涓存椂璁剧疆锛堜粎褰撳墠缁堢绐楀彛鏈夋晥锛夈€傛帹鑽愪娇鐢ㄥ浘褰㈢晫闈㈣缃?strong>绯荤粺鐜鍙橀噺</strong>锛岃繖鏍锋墍鏈夌粓绔獥鍙ｉ兘鐢熸晥銆?/p>
+<p><strong>新手提示</strong>：环境变量配置是很多新手最容易卡住的地方。在 Windows 上，可以通过”系统属性 → 环境变量”图形界面添加，也可以在 PowerShell 中使用 <code>$env:</code> 前缀临时设置（仅当前终端窗口有效）。推荐使用图形界面设置<strong>系统环境变量</strong>，这样所有终端窗口都生效。</p>
 </blockquote>
-<h5 id="宸ュ叿瑙ｆ瀽浼樺厛绾?><a href="#宸ュ叿瑙ｆ瀽浼樺厛绾? class="headerlink" title="宸ュ叿瑙ｆ瀽浼樺厛绾?></a>宸ュ叿瑙ｆ瀽浼樺厛绾?/h5><p>鎵€鏈夊彲鎵ц宸ュ叿锛圤penOCD銆丟DB銆丣Link锛夐伒寰粺涓€鐨?<strong>5 绾т紭鍏堢骇</strong>锛?/p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. CLI 鍙傛暟          (--openocd / --gdb / --jlink-path)    鈫?鏈€楂樹紭鍏堢骇锛屾樉寮忔寚瀹?/span><br><span class="line">2. 鐜鍙橀噺          (OPENOCD_DIR / GDB_DIR / JLINK_DIR)    鈫?鎵嬪姩閰嶇疆</span><br><span class="line">3. PATH              (绯荤粺 PATH 鑷姩鍙戠幇)                    鈫?璺ㄥ钩鍙伴€氱敤锛屾帹鑽?/span><br><span class="line">4. TI 鎻掍欢缂撳瓨       (~\.config\Texas Instruments\...)       鈫?VSCode 鎻掍欢鑷姩瀹夎浣嶇疆</span><br><span class="line">5. 閬楃暀璺緞          (TI_ROOT / CCS_BASE)                    鈫?鏈€鍚庡厹搴?/span><br></pre></td></tr></table></figure>
+<h5 id="工具解析优先级"><a href="#工具解析优先级" class="headerlink" title="工具解析优先级"></a>工具解析优先级</h5><p>所有可执行工具（OpenOCD、GDB、JLink）遵循统一的 <strong>5 级优先级</strong>：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. CLI 参数          (--openocd / --gdb / --jlink-path)    ← 最高优先级，显式指定</span><br><span class="line">2. 环境变量          (OPENOCD_DIR / GDB_DIR / JLINK_DIR)    ← 手动配置</span><br><span class="line">3. PATH              (系统 PATH 自动发现)                    ← 跨平台通用，推荐</span><br><span class="line">4. TI 插件缓存       (~\.config\Texas Instruments\...)       ← VSCode 插件自动安装位置</span><br><span class="line">5. 遗留路径          (TI_ROOT / CCS_BASE)                    ← 最后兜底</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><strong>瀹為檯浣跨敤涓?/strong>锛氬鏋滀綘鎶婂伐鍏烽兘鍔犲叆浜?PATH锛堝畨瑁呮椂鍕鹃€夆€濇坊鍔犲埌 PATH鈥濓級锛岀粷澶у鏁版儏鍐典笅涓嶉渶瑕佽缃幆澧冨彉閲忥紝TPA 浼氳嚜鍔ㄦ壘鍒板畠浠€傜幆澧冨彉閲忓拰 CLI 鍙傛暟涓昏瑙ｅ喅鈥濆涓増鏈叡瀛橈紝鎯虫寚瀹氭煇涓増鏈€濈殑鍦烘櫙銆?/p>
+<p><strong>实际使用中</strong>：如果你把工具都加入了 PATH（安装时勾选”添加到 PATH”），绝大多数情况下不需要设置环境变量，TPA 会自动找到它们。环境变量和 CLI 参数主要解决”多个版本共存，想指定某个版本”的场景。</p>
 </blockquote>
-<h4 id="10锛変竴琛岃瀹屽熀纭€宸ュ叿"><a href="#10锛変竴琛岃瀹屽熀纭€宸ュ叿" class="headerlink" title="10锛変竴琛岃瀹屽熀纭€宸ュ叿"></a>10锛変竴琛岃瀹屽熀纭€宸ュ叿</h4><p>濡傛灉浣犳兂鍏堟妸闈?TI 宸ュ叿涓€鍙ｆ皵鍑嗗濂斤紝鍙互鐩存帴鎵ц锛?/p>
+<h4 id="10）一行装完基础工具"><a href="#10）一行装完基础工具" class="headerlink" title="10）一行装完基础工具"></a>10）一行装完基础工具</h4><p>如果你想先把非 TI 工具一口气准备好，可以直接执行：</p>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">winget install Python.Python.<span class="number">3.12</span></span><br><span class="line">winget install Kitware.CMake</span><br><span class="line">winget install Ninja<span class="literal">-build</span>.Ninja</span><br><span class="line">winget install <span class="literal">--id</span> Git.Git <span class="literal">-e</span> <span class="literal">--source</span> winget</span><br></pre></td></tr></table></figure>
 
-<h3 id="3-2-閰嶇疆椤圭洰"><a href="#3-2-閰嶇疆椤圭洰" class="headerlink" title="3.2 閰嶇疆椤圭洰"></a>3.2 閰嶇疆椤圭洰</h3><h4 id="鑷"><a href="#鑷" class="headerlink" title="鑷"></a><strong>鑷</strong></h4><p>鍦ㄩ厤缃」鐩箣鍓嶏紝寤鸿鍏堣繘琛岃嚜妫€锛岀‘淇濇墍鏈変緷璧栭」閮藉凡姝ｇ‘瀹夎骞堕厤缃€?br>鍦ㄥ懡浠よ涓繍琛屼互涓嬪懡浠わ細</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mspm0<span class="literal">-init</span> <span class="literal">--check</span></span><br><span class="line"><span class="comment"># 浼氳緭鍑哄悇涓緷璧栫殑妫€娴嬬粨鏋滐紝璇峰湪纭繚娌℃湁閿欑殑鎯呭喌涓嬭繘琛屼笅涓€姝?/span></span><br></pre></td></tr></table></figure>
+<h3 id="3-2-配置项目"><a href="#3-2-配置项目" class="headerlink" title="3.2 配置项目"></a>3.2 配置项目</h3><h4 id="自检"><a href="#自检" class="headerlink" title="自检"></a><strong>自检</strong></h4><p>在配置项目之前，建议先进行自检，确保所有依赖项都已正确安装并配置。<br>在命令行中运行以下命令：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mspm0<span class="literal">-init</span> <span class="literal">--check</span></span><br><span class="line"><span class="comment"># 会输出各个依赖的检测结果，请在确保没有错的情况下进行下一步</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="鍒涘缓鏂伴」鐩?><a href="#鍒涘缓鏂伴」鐩? class="headerlink" title="鍒涘缓鏂伴」鐩?></a><strong>鍒涘缓鏂伴」鐩?/strong></h4><p>鍏堝垱寤洪」鐩洰褰曪紝姣斿<code>ti-project</code>锛岀劧鍚庢墦寮€Sysconfig杞欢锛岄€氳繃鍥惧舰鍖栫晫闈㈤厤缃姱鐗囧瀷鍙枫€佸紩鑴氬鐢ㄣ€佹椂閽熷拰澶栬鍙傛暟锛屼繚瀛樹负 <code>ti-project.syscfg</code> 鏂囦欢銆?/p>
-<p><code>mspm0-init</code> 宸查€氳繃 pip 鍏ㄥ眬瀹夎锛岀洿鎺ュ湪鍛戒护琛屼腑杩涘叆璇ョ洰褰曪紝杩愯浠ヤ笅鍛戒护锛?/p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 鏈€绠€鍗曪細鍦ㄥ彧鏈?.syscfg 鐨勭洰褰曚笅鐩存帴杩愯</span></span><br><span class="line">mspm0<span class="literal">-init</span></span><br><span class="line"><span class="comment"># 鑷姩鍙戠幇褰撳墠鐩綍 .syscfg锛屽師鍦板垱寤洪」鐩?/span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 鑷姩鍙戠幇褰撳墠鐩綍鐨?.syscfg锛屾寚瀹氶」鐩悕绉?/span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project</span><br><span class="line"></span><br><span class="line"><span class="comment"># 鎵嬪姩鎸囧畾 syscfg 鏂囦欢鍜岃皟璇曞櫒绫诲瀷</span></span><br><span class="line">mspm0<span class="literal">-init</span> new myboard.syscfg <span class="literal">-n</span> my_project <span class="literal">-d</span> xds110</span><br><span class="line"></span><br><span class="line"><span class="comment"># 鏃?syscfg锛岀函瑁告満璧风偣</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">--device</span> MSPM0G3507 <span class="literal">--package</span> <span class="string">&quot;LQFP-48(PT)&quot;</span> <span class="literal">-n</span> bare_start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 璺宠繃 Git 鑷姩鍒濆鍖?/span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">--no-git</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 鎵嬪姩鎸囧畾 SDK 鎴?SysConfig 璺緞锛堝鐗堟湰鍏卞瓨鏃朵娇鐢級</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">--sdk</span> C:\ti\mspm0_sdk_2_10_00_04 <span class="literal">--sysconfig</span> C:\ti\sysconfig_1.<span class="number">27.1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 鎵嬪姩鎸囧畾 JLink 璺緞</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">-d</span> jlink <span class="literal">--jlink-path</span> <span class="string">&quot;C:\Program Files\SEGGER\JLink&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 棰勮妯″紡锛氫粎鏄剧ず灏嗗垱寤虹殑鏂囦欢锛屼笉瀹為檯鍐欏叆</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">--dry-run</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 璺宠繃鏋勫缓楠岃瘉锛堜粎鐢熸垚鏂囦欢锛屼笉缂栬瘧锛?/span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">--no-build</span></span><br></pre></td></tr></table></figure>
+<h4 id="创建新项目"><a href="#创建新项目" class="headerlink" title="创建新项目"></a><strong>创建新项目</strong></h4><p>先创建项目目录，比如<code>ti-project</code>，然后打开Sysconfig软件，通过图形化界面配置芯片型号、引脚复用、时钟和外设参数，保存为 <code>ti-project.syscfg</code> 文件。</p>
+<p><code>mspm0-init</code> 已通过 pip 全局安装，直接在命令行中进入该目录，运行以下命令：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 最简单：在只有 .syscfg 的目录下直接运行</span></span><br><span class="line">mspm0<span class="literal">-init</span></span><br><span class="line"><span class="comment"># 自动发现当前目录 .syscfg，原地创建项目</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 自动发现当前目录的 .syscfg，指定项目名称</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project</span><br><span class="line"></span><br><span class="line"><span class="comment"># 手动指定 syscfg 文件和调试器类型</span></span><br><span class="line">mspm0<span class="literal">-init</span> new myboard.syscfg <span class="literal">-n</span> my_project <span class="literal">-d</span> xds110</span><br><span class="line"></span><br><span class="line"><span class="comment"># 无 syscfg，纯裸机起点</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">--device</span> MSPM0G3507 <span class="literal">--package</span> <span class="string">&quot;LQFP-48(PT)&quot;</span> <span class="literal">-n</span> bare_start</span><br><span class="line"></span><br><span class="line"><span class="comment"># 跳过 Git 自动初始化</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">--no-git</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 手动指定 SDK 或 SysConfig 路径（多版本共存时使用）</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">--sdk</span> C:\ti\mspm0_sdk_2_10_00_04 <span class="literal">--sysconfig</span> C:\ti\sysconfig_1.<span class="number">27.1</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 手动指定 JLink 路径</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">-d</span> jlink <span class="literal">--jlink-path</span> <span class="string">&quot;C:\Program Files\SEGGER\JLink&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 预览模式：仅显示将创建的文件，不实际写入</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">--dry-run</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 跳过构建验证（仅生成文件，不编译）</span></span><br><span class="line">mspm0<span class="literal">-init</span> new <span class="literal">-n</span> my_project <span class="literal">--no-build</span></span><br></pre></td></tr></table></figure>
 
-<h5 id="鍏ㄩ儴鍙傛暟閫熸煡"><a href="#鍏ㄩ儴鍙傛暟閫熸煡" class="headerlink" title="鍏ㄩ儴鍙傛暟閫熸煡"></a>鍏ㄩ儴鍙傛暟閫熸煡</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">mspm0-init new [syscfg] -n NAME [閫夐」]</span><br><span class="line"></span><br><span class="line">  -n, --name NAME        椤圭洰鍚嶇О锛堝繀濉級</span><br><span class="line">  -o, --output DIR       杈撳嚭鐩綍锛堥粯璁?./&lt;name&gt;/锛?/span><br><span class="line">  -s, --sdk PATH         MSPM0 SDK 璺緞锛堟墜鍔ㄦ寚瀹氾級</span><br><span class="line">  --sysconfig PATH       SysConfig 瀹夎鐩綍锛堟墜鍔ㄦ寚瀹氾級</span><br><span class="line">  -d, --debugger TYPE    cmsis-dap锛堥粯璁わ級| xds110 | jlink | none</span><br><span class="line">  --jlink-path PATH      JLink 瀹夎璺緞锛堝彲閫夛紝PATH 浼樺厛锛?/span><br><span class="line">  --device DEVICE        鎵嬪姩鎸囧畾鑺墖锛屽 MSPM0G3507</span><br><span class="line">  --package PACKAGE      鎵嬪姩鎸囧畾灏佽锛屽 LQFP-48(PT)</span><br><span class="line">  --dry-run              棰勮妯″紡锛屼笉鍒涘缓鏂囦欢</span><br><span class="line">  --no-build             璺宠繃 cmake 鏋勫缓楠岃瘉</span><br><span class="line">  --no-git               绂佺敤 Git 鑷姩鍒濆鍖?/span><br><span class="line"></span><br><span class="line">mspm0-init regenerate [椤圭洰鐩綍] [閫夐」]</span><br><span class="line"></span><br><span class="line">  -d, --debugger TYPE    鏇存崲璋冭瘯鍣細cmsis-dap | xds110 | jlink | none</span><br><span class="line">  --jlink-path PATH      JLink 瀹夎璺緞锛堝彲閫夛紝PATH 浼樺厛锛?/span><br><span class="line">  --no-build             璺宠繃閲嶇紪璇?/span><br><span class="line">  --no-backup            涓嶅浠芥棫鏂囦欢</span><br><span class="line">  --dry-run              棰勮妯″紡</span><br><span class="line">  --no-git               绂佺敤 Git 鑷姩鍒濆鍖?/span><br></pre></td></tr></table></figure>
+<h5 id="全部参数速查"><a href="#全部参数速查" class="headerlink" title="全部参数速查"></a>全部参数速查</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">mspm0-init new [syscfg] -n NAME [选项]</span><br><span class="line"></span><br><span class="line">  -n, --name NAME        项目名称（必填）</span><br><span class="line">  -o, --output DIR       输出目录（默认 ./&lt;name&gt;/）</span><br><span class="line">  -s, --sdk PATH         MSPM0 SDK 路径（手动指定）</span><br><span class="line">  --sysconfig PATH       SysConfig 安装目录（手动指定）</span><br><span class="line">  -d, --debugger TYPE    cmsis-dap（默认）| xds110 | jlink | none</span><br><span class="line">  --jlink-path PATH      JLink 安装路径（可选，PATH 优先）</span><br><span class="line">  --device DEVICE        手动指定芯片，如 MSPM0G3507</span><br><span class="line">  --package PACKAGE      手动指定封装，如 LQFP-48(PT)</span><br><span class="line">  --dry-run              预览模式，不创建文件</span><br><span class="line">  --no-build             跳过 cmake 构建验证</span><br><span class="line">  --no-git               禁用 Git 自动初始化</span><br><span class="line"></span><br><span class="line">mspm0-init regenerate [项目目录] [选项]</span><br><span class="line"></span><br><span class="line">  -d, --debugger TYPE    更换调试器：cmsis-dap | xds110 | jlink | none</span><br><span class="line">  --jlink-path PATH      JLink 安装路径（可选，PATH 优先）</span><br><span class="line">  --no-build             跳过重编译</span><br><span class="line">  --no-backup            不备份旧文件</span><br><span class="line">  --dry-run              预览模式</span><br><span class="line">  --no-git               禁用 Git 自动初始化</span><br></pre></td></tr></table></figure>
 
-<p>鏇村鍙傛暟鍜岄€夐」鍙傝€冮」鐩?readme 鎴栨槸杩愯 <code>mspm0-init --help</code> 鏌ョ湅銆?/p>
-<h4 id="閲嶆柊鐢熸垚閰嶇疆"><a href="#閲嶆柊鐢熸垚閰嶇疆" class="headerlink" title="閲嶆柊鐢熸垚閰嶇疆"></a><strong>閲嶆柊鐢熸垚閰嶇疆</strong></h4><p>濡傛灉椤圭洰缂栧啓鍒颁竴鍗婇渶瑕佷慨鏀瑰紩鑴氬畾涔夋垨鏄璁鹃厤缃紝鍙互鍦⊿ysconfig涓慨鏀瑰悗淇濆瓨锛岀劧鍚庡湪椤圭洰鐩綍涓嬭繍琛岋細</p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mspm0<span class="literal">-init</span> regenerate               <span class="comment"># 鍦ㄩ」鐩洰褰曞唴鎵ц</span></span><br><span class="line">mspm0<span class="literal">-init</span> regenerate /path/to/proj <span class="comment"># 鎸囧畾椤圭洰璺緞</span></span><br></pre></td></tr></table></figure>
+<p>更多参数和选项参考项目 readme 或是运行 <code>mspm0-init --help</code> 查看。</p>
+<h4 id="重新生成配置"><a href="#重新生成配置" class="headerlink" title="重新生成配置"></a><strong>重新生成配置</strong></h4><p>如果项目编写到一半需要修改引脚定义或是外设配置，可以在Sysconfig中修改后保存，然后在项目目录下运行：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mspm0<span class="literal">-init</span> regenerate               <span class="comment"># 在项目目录内执行</span></span><br><span class="line">mspm0<span class="literal">-init</span> regenerate /path/to/proj <span class="comment"># 指定项目路径</span></span><br></pre></td></tr></table></figure>
 
-<p>灏卞彲浠ヨ嚜鍔ㄩ噸鏂扮敓鎴愪唬鐮併€?code>regenerate</code> 浼氳嚜鍔ㄥ皢鏃ч厤缃枃浠跺浠藉埌 <code>.sysconfig_backup/</code> 鐩綍锛屼笉褰卞搷浣犲凡缁忓啓濂界殑涓氬姟浠ｇ爜锛?code>src/</code> 涓嬬殑鍐呭瀹屽叏瀹夊叏锛夈€傚鏋滀綘涓嶉渶瑕佸浠斤紝鍙互鍔?<code>--no-backup</code> 璺宠繃銆?/p>
-<p>鏇存崲璋冭瘯鍣ㄤ篃鏃犻渶閲嶅缓椤圭洰锛?/p>
-<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mspm0<span class="literal">-init</span> regenerate <span class="literal">-d</span> xds110        <span class="comment"># 浠?CMSIS-DAP 鍒囨崲鍒?XDS110</span></span><br><span class="line">mspm0<span class="literal">-init</span> regenerate <span class="literal">-d</span> jlink         <span class="comment"># 鍒囨崲鍒?JLink锛圫egger 鍘熺敓 GDB Server锛?/span></span><br><span class="line">mspm0<span class="literal">-init</span> regenerate <span class="literal">-d</span> none          <span class="comment"># 绉婚櫎璋冭瘯鍣ㄩ厤缃紙绾紪璇戠幆澧冿級</span></span><br></pre></td></tr></table></figure>
+<p>就可以自动重新生成代码。<code>regenerate</code> 会自动将旧配置文件备份到 <code>.sysconfig_backup/</code> 目录，不影响你已经写好的业务代码（<code>src/</code> 下的内容完全安全）。如果你不需要备份，可以加 <code>--no-backup</code> 跳过。</p>
+<p>更换调试器也无需重建项目：</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mspm0<span class="literal">-init</span> regenerate <span class="literal">-d</span> xds110        <span class="comment"># 从 CMSIS-DAP 切换到 XDS110</span></span><br><span class="line">mspm0<span class="literal">-init</span> regenerate <span class="literal">-d</span> jlink         <span class="comment"># 切换到 JLink（Segger 原生 GDB Server）</span></span><br><span class="line">mspm0<span class="literal">-init</span> regenerate <span class="literal">-d</span> none          <span class="comment"># 移除调试器配置（纯编译环境）</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="3-3-缂栧啓椤圭洰"><a href="#3-3-缂栧啓椤圭洰" class="headerlink" title="3.3 缂栧啓椤圭洰"></a>3.3 缂栧啓椤圭洰</h3><p>涓荤▼搴忔斁鍦?<code>src/main.c</code>锛屽彲浠ョ洿鎺ュ湪VSCode涓墦寮€椤圭洰锛岀紪鍐欎笟鍔￠€昏緫銆?br>鍒濆椤圭洰缁撴瀯濡備笅锛?/p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">my_project/</span><br><span class="line">鈹溾攢鈹€ CMakeLists.txt              <span class="comment"># CMake 鏋勫缓瀹氫箟</span></span><br><span class="line">鈹溾攢鈹€ .gitignore                  <span class="comment"># Git 蹇界暐瑙勫垯锛堣嚜鍔ㄧ敓鎴愶級</span></span><br><span class="line">鈹溾攢鈹€ my_project.syscfg           <span class="comment"># 鍘熷 SysConfig 閰嶇疆</span></span><br><span class="line">鈹溾攢鈹€ config/</span><br><span class="line">鈹?  鈹溾攢鈹€ ti_msp_dl_config.h      <span class="comment"># 鑷姩鐢熸垚 鈥?璇峰嬁鎵嬪姩缂栬緫</span></span><br><span class="line">鈹?  鈹溾攢鈹€ ti_msp_dl_config.c      <span class="comment"># 鑷姩鐢熸垚 鈥?璇峰嬁鎵嬪姩缂栬緫</span></span><br><span class="line">鈹?  鈹溾攢鈹€ device_linker.lds       <span class="comment"># 閾炬帴鑴氭湰</span></span><br><span class="line">鈹?  鈹斺攢鈹€ device.opt              <span class="comment"># 缂栬瘧閫夐」</span></span><br><span class="line">鈹溾攢鈹€ inc/</span><br><span class="line">鈹?  鈹溾攢鈹€ main.h                  <span class="comment"># 搴旂敤澶存枃浠?/span></span><br><span class="line">鈹?  鈹溾攢鈹€ app/                    <span class="comment"># 搴旂敤灞傚ご鏂囦欢</span></span><br><span class="line">鈹?  鈹溾攢鈹€ driver/                 <span class="comment"># 椹卞姩澶存枃浠?/span></span><br><span class="line">鈹?  鈹溾攢鈹€ modules/                <span class="comment"># 鍔熻兘妯″潡澶存枃浠?/span></span><br><span class="line">鈹?  鈹斺攢鈹€ utils/                  <span class="comment"># 宸ュ叿澶存枃浠?/span></span><br><span class="line">鈹溾攢鈹€ src/</span><br><span class="line">鈹?  鈹溾攢鈹€ main.c                  <span class="comment"># 搴旂敤鍏ュ彛锛堝湪姝ゅ啓浠ｇ爜锛?/span></span><br><span class="line">鈹?  鈹溾攢鈹€ app/                    <span class="comment"># 搴旂敤灞傚疄鐜?/span></span><br><span class="line">鈹?  鈹溾攢鈹€ driver/                 <span class="comment"># 椹卞姩瀹炵幇</span></span><br><span class="line">鈹?  鈹溾攢鈹€ modules/                <span class="comment"># 鍔熻兘妯″潡瀹炵幇</span></span><br><span class="line">鈹?  鈹斺攢鈹€ utils/                  <span class="comment"># 宸ュ叿瀹炵幇</span></span><br><span class="line">鈹溾攢鈹€ lib/                        <span class="comment"># 鏈湴闈欐€佸簱</span></span><br><span class="line">鈹溾攢鈹€ excluded/                   <span class="comment"># 涓嶅弬涓庣紪璇戠殑 SysConfig 浜х墿</span></span><br><span class="line">鈹溾攢鈹€ build/                      <span class="comment"># 鏋勫缓杈撳嚭锛圗LF / HEX / BIN / MAP锛?/span></span><br><span class="line">鈹斺攢鈹€ .vscode/</span><br><span class="line">    鈹溾攢鈹€ launch.json             <span class="comment"># 璋冭瘯閰嶇疆锛圕MSIS-DAP / XDS110 / JLink锛?/span></span><br><span class="line">    鈹溾攢鈹€ tasks.json              <span class="comment"># 鏋勫缓浠诲姟 + 鎵撳紑 SysConfig + Flash 鐑у綍</span></span><br><span class="line">    鈹溾攢鈹€ settings.json           <span class="comment"># Task Buttons 鐘舵€佹爮蹇嵎鎸夐挳</span></span><br><span class="line">    鈹斺攢鈹€ c_cpp_properties.json   <span class="comment"># IntelliSense 閰嶇疆</span></span><br></pre></td></tr></table></figure>
+<h3 id="3-3-编写项目"><a href="#3-3-编写项目" class="headerlink" title="3.3 编写项目"></a>3.3 编写项目</h3><p>主程序放在 <code>src/main.c</code>，可以直接在VSCode中打开项目，编写业务逻辑。<br>初始项目结构如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">my_project/</span><br><span class="line">├── CMakeLists.txt              <span class="comment"># CMake 构建定义</span></span><br><span class="line">├── .gitignore                  <span class="comment"># Git 忽略规则（自动生成）</span></span><br><span class="line">├── my_project.syscfg           <span class="comment"># 原始 SysConfig 配置</span></span><br><span class="line">├── config/</span><br><span class="line">│   ├── ti_msp_dl_config.h      <span class="comment"># 自动生成 — 请勿手动编辑</span></span><br><span class="line">│   ├── ti_msp_dl_config.c      <span class="comment"># 自动生成 — 请勿手动编辑</span></span><br><span class="line">│   ├── device_linker.lds       <span class="comment"># 链接脚本</span></span><br><span class="line">│   └── device.opt              <span class="comment"># 编译选项</span></span><br><span class="line">├── inc/</span><br><span class="line">│   ├── main.h                  <span class="comment"># 应用头文件</span></span><br><span class="line">│   ├── app/                    <span class="comment"># 应用层头文件</span></span><br><span class="line">│   ├── driver/                 <span class="comment"># 驱动头文件</span></span><br><span class="line">│   ├── modules/                <span class="comment"># 功能模块头文件</span></span><br><span class="line">│   └── utils/                  <span class="comment"># 工具头文件</span></span><br><span class="line">├── src/</span><br><span class="line">│   ├── main.c                  <span class="comment"># 应用入口（在此写代码）</span></span><br><span class="line">│   ├── app/                    <span class="comment"># 应用层实现</span></span><br><span class="line">│   ├── driver/                 <span class="comment"># 驱动实现</span></span><br><span class="line">│   ├── modules/                <span class="comment"># 功能模块实现</span></span><br><span class="line">│   └── utils/                  <span class="comment"># 工具实现</span></span><br><span class="line">├── lib/                        <span class="comment"># 本地静态库</span></span><br><span class="line">├── excluded/                   <span class="comment"># 不参与编译的 SysConfig 产物</span></span><br><span class="line">├── build/                      <span class="comment"># 构建输出（ELF / HEX / BIN / MAP）</span></span><br><span class="line">└── .vscode/</span><br><span class="line">    ├── launch.json             <span class="comment"># 调试配置（CMSIS-DAP / XDS110 / JLink）</span></span><br><span class="line">    ├── tasks.json              <span class="comment"># 构建任务 + 打开 SysConfig + Flash 烧录</span></span><br><span class="line">    ├── settings.json           <span class="comment"># Task Buttons 状态栏快捷按钮</span></span><br><span class="line">    └── c_cpp_properties.json   <span class="comment"># IntelliSense 配置</span></span><br></pre></td></tr></table></figure>
 
-<h3 id="3-4-渚濊禆鍏崇郴涓€瑙?><a href="#3-4-渚濊禆鍏崇郴涓€瑙? class="headerlink" title="3.4 渚濊禆鍏崇郴涓€瑙?></a>3.4 渚濊禆鍏崇郴涓€瑙?/h3><p>涓嬪浘灞曠ず浜?TPA 涓庡悇宸ュ叿涔嬮棿鐨勪緷璧栧叧绯伙紝甯姪浣犵悊瑙ｆ暣涓伐鍏烽摼鐨勫眰娆＄粨鏋勶細</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mspm0-init</span><br><span class="line">鈹溾攢鈹€ SysConfig 1.x 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ 鐢熸垚 ti_msp_dl_config.c/h銆侀摼鎺ヨ剼鏈?/span><br><span class="line">鈹溾攢鈹€ MSPM0 SDK 2.x</span><br><span class="line">鈹?  鈹溾攢鈹€ driverlib.a 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ 纭欢鎶借薄灞?/span><br><span class="line">鈹?  鈹溾攢鈹€ startup_*.c 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ 涓柇鍚戦噺琛?+ 鍚姩浠ｇ爜</span><br><span class="line">鈹?  鈹溾攢鈹€ CMSIS Core 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ Cortex-M0+ 瀵勫瓨鍣ㄥ畾涔?/span><br><span class="line">鈹?  鈹斺攢鈹€ DeviceFamily.h 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ 鑺墖绯诲垪瀹忥紙杩愯鏃跺姩鎬佸彂鐜?58 娆捐姱鐗囷級</span><br><span class="line">鈹溾攢鈹€ arm-none-eabi-gcc 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ 浜ゅ弶缂栬瘧</span><br><span class="line">鈹溾攢鈹€ CMake + Ninja 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ 鏋勫缓绯荤粺</span><br><span class="line">鈹溾攢鈹€ OpenOCD 1.3.x (鍙€? 鈹€鈹€鈹€鈹€鈹€鈹€ GDB Server + 鐑у綍锛坈msis-dap / xds110 蹇呰锛?/span><br><span class="line">鈹溾攢鈹€ JLink 7.x+ (鍙€? 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ 鍘熺敓 GDB Server + 鐑у綍锛坖link 妯″紡锛屾帹鑽?鈮?7.70锛?/span><br><span class="line">鈹溾攢鈹€ arm-none-eabi-gdb 14.x 鈹€鈹€鈹€鈹€ 婧愮爜绾ц皟璇?/span><br><span class="line">鈹溾攢鈹€ Git 鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€鈹€ 鐗堟湰鎺у埗锛堣嚜鍔ㄥ垵濮嬪寲锛?/span><br><span class="line">鈹斺攢鈹€ VS Code + Cortex-Debug 鈹€鈹€鈹€鈹€ IDE 闆嗘垚</span><br></pre></td></tr></table></figure>
+<h3 id="3-4-依赖关系一览"><a href="#3-4-依赖关系一览" class="headerlink" title="3.4 依赖关系一览"></a>3.4 依赖关系一览</h3><p>下图展示了 TPA 与各工具之间的依赖关系，帮助你理解整个工具链的层次结构：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">mspm0-init</span><br><span class="line">├── SysConfig 1.x ────────────── 生成 ti_msp_dl_config.c/h、链接脚本</span><br><span class="line">├── MSPM0 SDK 2.x</span><br><span class="line">│   ├── driverlib.a ──────────── 硬件抽象层</span><br><span class="line">│   ├── startup_*.c ──────────── 中断向量表 + 启动代码</span><br><span class="line">│   ├── CMSIS Core ───────────── Cortex-M0+ 寄存器定义</span><br><span class="line">│   └── DeviceFamily.h ──────── 芯片系列宏（运行时动态发现 58 款芯片）</span><br><span class="line">├── arm-none-eabi-gcc ────────── 交叉编译</span><br><span class="line">├── CMake + Ninja ───────────── 构建系统</span><br><span class="line">├── OpenOCD 1.3.x (可选) ────── GDB Server + 烧录（cmsis-dap / xds110 必装）</span><br><span class="line">├── JLink 7.x+ (可选) ───────── 原生 GDB Server + 烧录（jlink 模式，推荐 ≥ 7.70）</span><br><span class="line">├── arm-none-eabi-gdb 14.x ──── 源码级调试</span><br><span class="line">├── Git ──────────────────────── 版本控制（自动初始化）</span><br><span class="line">└── VS Code + Cortex-Debug ──── IDE 集成</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><strong>鍏抽敭璺緞</strong>锛欳MSIS-DAP &#x2F; XDS110 鐢ㄦ埛璧?OpenOCD 璺緞锛汮Link 鐢ㄦ埛璧?Segger 鍘熺敓 GDB Server 璺緞銆備袱鏉¤矾寰勬渶缁堥兘閫氳繃 <code>arm-none-eabi-gdb</code> 瀵规帴 VSCode锛屽鐢ㄦ埛閫忔槑銆?/p>
+<p><strong>关键路径</strong>：CMSIS-DAP &#x2F; XDS110 用户走 OpenOCD 路径；JLink 用户走 Segger 原生 GDB Server 路径。两条路径最终都通过 <code>arm-none-eabi-gdb</code> 对接 VSCode，对用户透明。</p>
 </blockquote>
-<h2 id="4-Linux-涓嬬殑瀹夎鍜屼娇鐢ㄦ寚鍗?><a href="#4-Linux-涓嬬殑瀹夎鍜屼娇鐢ㄦ寚鍗? class="headerlink" title="4. Linux 涓嬬殑瀹夎鍜屼娇鐢ㄦ寚鍗?></a>4. Linux 涓嬬殑瀹夎鍜屼娇鐢ㄦ寚鍗?/h2><p>鏈」鐩殑璁捐鍒濊》灏辨槸闈㈠悜 Linux 寮€鍙戠幆澧冿紝鑴氭湰鏈韩涔熸槸鍦?Linux 涓嬬紪鍐欏拰娴嬭瘯鐨勩€傜浉姣?Windows锛孡inux 鐜涓嬬殑渚濊禆瀹夎鍜屽伐鍏烽摼閰嶇疆鏇村姞绠€鍗曠洿鎺ワ紝涓斿ぉ鐒堕€傚悎鍛戒护琛屽伐浣滄祦銆傛湰绔犲皢瀹屾暣浠嬬粛濡備綍鍦?Linux锛堜互 Ubuntu&#x2F;Debian 绯讳负渚嬶級涓婃惌寤烘暣濂?MSPM0 寮€鍙戠幆澧冦€?/p>
-<h3 id="4-1-涓?Windows-鐨勫叧閿樊寮?><a href="#4-1-涓?Windows-鐨勫叧閿樊寮? class="headerlink" title="4.1 涓?Windows 鐨勫叧閿樊寮?></a>4.1 涓?Windows 鐨勫叧閿樊寮?/h3><table>
+<h2 id="4-Linux-下的安装和使用指南"><a href="#4-Linux-下的安装和使用指南" class="headerlink" title="4. Linux 下的安装和使用指南"></a>4. Linux 下的安装和使用指南</h2><p>本项目的设计初衷就是面向 Linux 开发环境，脚本本身也是在 Linux 下编写和测试的。相比 Windows，Linux 环境下的依赖安装和工具链配置更加简单直接，且天然适合命令行工作流。本章将完整介绍如何在 Linux（以 Ubuntu&#x2F;Debian 系为例）上搭建整套 MSPM0 开发环境。</p>
+<h3 id="4-1-与-Windows-的关键差异"><a href="#4-1-与-Windows-的关键差异" class="headerlink" title="4.1 与 Windows 的关键差异"></a>4.1 与 Windows 的关键差异</h3><table>
 <thead>
 <tr>
-<th>鏂归潰</th>
+<th>方面</th>
 <th>Windows</th>
 <th>Linux</th>
 </tr>
 </thead>
 <tbody><tr>
-<td>鑴氭湰瀹夎</td>
+<td>脚本安装</td>
 <td><code>pip install ti-project-assistant</code></td>
 <td><code>pip install ti-project-assistant</code></td>
 </tr>
 <tr>
-<td>宸ュ叿閾惧畨瑁?/td>
-<td>闇€鎵嬪姩涓嬭浇瀹夎鍖呮垨浣跨敤 winget</td>
-<td><code>apt</code> 涓€琛屾悶瀹氭牳蹇冨伐鍏烽摼</td>
+<td>工具链安装</td>
+<td>需手动下载安装包或使用 winget</td>
+<td><code>apt</code> 一行搞定核心工具链</td>
 </tr>
 <tr>
-<td>TI 宸ュ叿榛樿璺緞</td>
+<td>TI 工具默认路径</td>
 <td><code>C:\ti\</code></td>
 <td><code>~/ti/</code></td>
 </tr>
@@ -356,168 +356,167 @@
 </tr>
 <tr>
 <td>OpenOCD&#x2F;GDB</td>
-<td>浠?PATH 鑷姩鍙戠幇锛屾垨 TI VSCode 鎻掍欢</td>
-<td>浠?PATH 鑷姩鍙戠幇锛屾垨 TI VSCode 鎻掍欢</td>
+<td>从 PATH 自动发现，或 TI VSCode 插件</td>
+<td>从 PATH 自动发现，或 TI VSCode 插件</td>
 </tr>
 <tr>
 <td>JLink</td>
-<td>SEGGER 瀹夎鍖?鈫?闇€鎵嬪姩娣诲姞 <code>bin\</code> 鍒?PATH</td>
-<td><code>.deb</code> 鑷姩鍔犲叆 PATH &#x2F; <code>.tar.gz</code> 闇€鎵嬪姩娣诲姞 <code>bin/</code> 鎴栬 <code>JLINK_DIR</code></td>
+<td>SEGGER 安装包 → 需手动添加 <code>bin\</code> 到 PATH</td>
+<td><code>.deb</code> 自动加入 PATH &#x2F; <code>.tar.gz</code> 需手动添加 <code>bin/</code> 或设 <code>JLINK_DIR</code></td>
 </tr>
 <tr>
-<td>璋冭瘯鍣ㄦ潈闄?/td>
-<td>鍗虫彃鍗崇敤</td>
-<td>闇€閰嶇疆 udev 瑙勫垯</td>
+<td>调试器权限</td>
+<td>即插即用</td>
+<td>需配置 udev 规则</td>
 </tr>
 </tbody></table>
-<h3 id="4-2-瀹夎渚濊禆"><a href="#4-2-瀹夎渚濊禆" class="headerlink" title="4.2 瀹夎渚濊禆"></a>4.2 瀹夎渚濊禆</h3><p>Linux 涓嬬殑渚濊禆瀹夎杩滄瘮 Windows 绠€娲併€傛牳蹇冨伐鍏烽摼涓€琛屽懡浠ゅ嵆鍙畬鎴愶紝TI 瀹樻柟宸ュ叿鍙渶涓嬭浇瑙ｅ帇銆?/p>
-<h4 id="1锛塒ython-1"><a href="#1锛塒ython-1" class="headerlink" title="1锛塒ython"></a>1锛塒ython</h4><p>澶у鏁?Linux 鍙戣鐗堝凡棰勮 Python 3銆傜‘璁ょ増鏈細</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 --version   <span class="comment"># 闇€瑕?鈮?3.8</span></span><br></pre></td></tr></table></figure>
+<h3 id="4-2-安装依赖"><a href="#4-2-安装依赖" class="headerlink" title="4.2 安装依赖"></a>4.2 安装依赖</h3><p>Linux 下的依赖安装远比 Windows 简洁。核心工具链一行命令即可完成，TI 官方工具只需下载解压。</p>
+<h4 id="1）Python-1"><a href="#1）Python-1" class="headerlink" title="1）Python"></a>1）Python</h4><p>大多数 Linux 发行版已预装 Python 3。确认版本：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python3 --version   <span class="comment"># 需要 ≥ 3.8</span></span><br></pre></td></tr></table></figure>
 
-<p>濡傛灉鐗堟湰杩囦綆鎴栨湭瀹夎锛?/p>
+<p>如果版本过低或未安装：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install python3 python3-pip</span><br></pre></td></tr></table></figure>
 
-<h4 id="2锛堿RM-GCC-浜ゅ弶缂栬瘧宸ュ叿閾?1"><a href="#2锛堿RM-GCC-浜ゅ弶缂栬瘧宸ュ叿閾?1" class="headerlink" title="2锛堿RM GCC 浜ゅ弶缂栬瘧宸ュ叿閾?></a>2锛堿RM GCC 浜ゅ弶缂栬瘧宸ュ叿閾?/h4><p>Ubuntu&#x2F;Debian 瀹樻柟浠撳簱鑷甫 <code>gcc-arm-none-eabi</code>锛岀増鏈彲鑳界◢鏃т絾浠嶅彲鐢ㄣ€傛帹鑽愪粠 ARM 瀹樼綉涓嬭浇鏈€鏂?15.x 鐗堟湰浠ヨ幏寰楁渶浣冲吋瀹规€с€?/p>
-<p><strong>鏂瑰紡涓€锛堟帹鑽愶級</strong>锛氫粠 ARM 瀹樼綉涓嬭浇</p>
-<p>浠?<a target="_blank" rel="noopener" href="https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads">ARM GNU Toolchain Downloads</a> 涓嬭浇 <code>arm-gnu-toolchain-15.x.x-x86_64-arm-none-eabi.tar.xz</code>锛岃В鍘嬪悗灏嗗叾 <code>bin/</code> 鐩綍鍔犲叆 PATH锛?/p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 绀轰緥锛氳В鍘嬪埌 /opt</span></span><br><span class="line"><span class="built_in">sudo</span> tar -xf arm-gnu-toolchain-15.x.x-x86_64-arm-none-eabi.tar.xz -C /opt</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;/opt/arm-gnu-toolchain-15.x.x-x86_64-arm-none-eabi/bin:<span class="variable">$PATH</span>&quot;</span></span><br><span class="line"><span class="comment"># 寤鸿鍐欏叆 ~/.bashrc 鎴?~/.zshrc 鎸佷箙鍖?/span></span><br></pre></td></tr></table></figure>
+<h4 id="2）ARM-GCC-交叉编译工具链-1"><a href="#2）ARM-GCC-交叉编译工具链-1" class="headerlink" title="2）ARM GCC 交叉编译工具链"></a>2）ARM GCC 交叉编译工具链</h4><p>Ubuntu&#x2F;Debian 官方仓库自带 <code>gcc-arm-none-eabi</code>，版本可能稍旧但仍可用。推荐从 ARM 官网下载最新 15.x 版本以获得最佳兼容性。</p>
+<p><strong>方式一（推荐）</strong>：从 ARM 官网下载</p>
+<p>从 <a target="_blank" rel="noopener" href="https://developer.arm.com/downloads/-/arm-gnu-toolchain-downloads">ARM GNU Toolchain Downloads</a> 下载 <code>arm-gnu-toolchain-15.x.x-x86_64-arm-none-eabi.tar.xz</code>，解压后将其 <code>bin/</code> 目录加入 PATH：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 示例：解压到 /opt</span></span><br><span class="line"><span class="built_in">sudo</span> tar -xf arm-gnu-toolchain-15.x.x-x86_64-arm-none-eabi.tar.xz -C /opt</span><br><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;/opt/arm-gnu-toolchain-15.x.x-x86_64-arm-none-eabi/bin:<span class="variable">$PATH</span>&quot;</span></span><br><span class="line"><span class="comment"># 建议写入 ~/.bashrc 或 ~/.zshrc 持久化</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>鏂瑰紡浜?/strong>锛氫娇鐢?apt锛堢増鏈彲鑳藉亸鏃э級锛?/p>
+<p><strong>方式二</strong>：使用 apt（版本可能偏旧）：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install gcc-arm-none-eabi</span><br></pre></td></tr></table></figure>
 
-<p>楠岃瘉瀹夎锛?/p>
+<p>验证安装：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">arm-none-eabi-gcc --version</span><br></pre></td></tr></table></figure>
 
-<h4 id="3锛塁Make-涓?Ninja-1"><a href="#3锛塁Make-涓?Ninja-1" class="headerlink" title="3锛塁Make 涓?Ninja"></a>3锛塁Make 涓?Ninja</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install cmake ninja-build</span><br></pre></td></tr></table></figure>
+<h4 id="3）CMake-与-Ninja-1"><a href="#3）CMake-与-Ninja-1" class="headerlink" title="3）CMake 与 Ninja"></a>3）CMake 与 Ninja</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install cmake ninja-build</span><br></pre></td></tr></table></figure>
 
-<p>楠岃瘉锛?/p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cmake --version   <span class="comment"># 鈮?3.13</span></span><br><span class="line">ninja --version</span><br></pre></td></tr></table></figure>
+<p>验证：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">cmake --version   <span class="comment"># ≥ 3.13</span></span><br><span class="line">ninja --version</span><br></pre></td></tr></table></figure>
 
-<h4 id="4锛塗I-MSPM0-SDK-1"><a href="#4锛塗I-MSPM0-SDK-1" class="headerlink" title="4锛塗I MSPM0 SDK"></a>4锛塗I MSPM0 SDK</h4><p>浠?<a target="_blank" rel="noopener" href="https://www.ti.com/tool/MSPM0-SDK">TI MSPM0 SDK</a> 涓嬭浇 Linux 鐗堟湰锛岃В鍘嬪埌 <code>~/ti/</code>锛?/p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p ~/ti</span><br><span class="line"><span class="comment"># 鍋囪涓嬭浇鐨勫畨瑁呭寘涓?mspm0_sdk_2_10_00_04-linux.zip</span></span><br><span class="line">unzip mspm0_sdk_2_10_00_04-linux.zip -d ~/ti/</span><br><span class="line"><span class="comment"># 瑙ｅ帇鍚庤矾寰勪负 ~/ti/mspm0_sdk_2_10_00_04/</span></span><br></pre></td></tr></table></figure>
+<h4 id="4）TI-MSPM0-SDK-1"><a href="#4）TI-MSPM0-SDK-1" class="headerlink" title="4）TI MSPM0 SDK"></a>4）TI MSPM0 SDK</h4><p>从 <a target="_blank" rel="noopener" href="https://www.ti.com/tool/MSPM0-SDK">TI MSPM0 SDK</a> 下载 Linux 版本，解压到 <code>~/ti/</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">mkdir</span> -p ~/ti</span><br><span class="line"><span class="comment"># 假设下载的安装包为 mspm0_sdk_2_10_00_04-linux.zip</span></span><br><span class="line">unzip mspm0_sdk_2_10_00_04-linux.zip -d ~/ti/</span><br><span class="line"><span class="comment"># 解压后路径为 ~/ti/mspm0_sdk_2_10_00_04/</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="5锛塗I-SysConfig-1"><a href="#5锛塗I-SysConfig-1" class="headerlink" title="5锛塗I SysConfig"></a>5锛塗I SysConfig</h4><p>浠?<a target="_blank" rel="noopener" href="https://www.ti.com/tool/SYSCONFIG">TI SysConfig</a> 涓嬭浇 Linux 鐗堟湰锛屽悓鏍疯В鍘嬪埌 <code>~/ti/</code>锛?/p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 涓嬭浇 .tar.gz 瀹夎鍖呭悗</span></span><br><span class="line">tar -xzf sysconfig_1.27.1.tar.gz -C ~/ti/</span><br><span class="line"><span class="comment"># 瑙ｅ帇鍚庤矾寰勪负 ~/ti/sysconfig_1.27.1/</span></span><br></pre></td></tr></table></figure>
+<h4 id="5）TI-SysConfig-1"><a href="#5）TI-SysConfig-1" class="headerlink" title="5）TI SysConfig"></a>5）TI SysConfig</h4><p>从 <a target="_blank" rel="noopener" href="https://www.ti.com/tool/SYSCONFIG">TI SysConfig</a> 下载 Linux 版本，同样解压到 <code>~/ti/</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 下载 .tar.gz 安装包后</span></span><br><span class="line">tar -xzf sysconfig_1.27.1.tar.gz -C ~/ti/</span><br><span class="line"><span class="comment"># 解压后路径为 ~/ti/sysconfig_1.27.1/</span></span><br></pre></td></tr></table></figure>
 
-<p>杩欓噷鐨?<code>sysconfig_cli.sh</code> 灏辨槸鑴氭湰灏嗕細璋冪敤鐨?CLI 鍏ュ彛锛圵indows 涓婄殑 <code>.bat</code> 瀵瑰簲鐗╋級銆?/p>
-<h4 id="6锛塐penOCD-鍜?arm-none-eabi-gdb锛圕MSIS-DAP-XDS110-蹇呰锛孞Link-鐢ㄦ埛鍙€夛級-1"><a href="#6锛塐penOCD-鍜?arm-none-eabi-gdb锛圕MSIS-DAP-XDS110-蹇呰锛孞Link-鐢ㄦ埛鍙€夛級-1" class="headerlink" title="6锛塐penOCD 鍜?arm-none-eabi-gdb锛圕MSIS-DAP &#x2F; XDS110 蹇呰锛孞Link 鐢ㄦ埛鍙€夛級"></a>6锛塐penOCD 鍜?arm-none-eabi-gdb锛圕MSIS-DAP &#x2F; XDS110 蹇呰锛孞Link 鐢ㄦ埛鍙€夛級</h4><blockquote>
-<p><strong>鈿狅笍 v1.0.0 閲嶈鍙樻洿</strong>锛氬鏋滀綘浣跨敤 <strong>JLink</strong> 璋冭瘯鍣紝鍙互瀹屽叏璺宠繃 OpenOCD銆?/p>
+<p>这里的 <code>sysconfig_cli.sh</code> 就是脚本将会调用的 CLI 入口（Windows 上的 <code>.bat</code> 对应物）。</p>
+<h4 id="6）OpenOCD-和-arm-none-eabi-gdb（CMSIS-DAP-XDS110-必装，JLink-用户可选）-1"><a href="#6）OpenOCD-和-arm-none-eabi-gdb（CMSIS-DAP-XDS110-必装，JLink-用户可选）-1" class="headerlink" title="6）OpenOCD 和 arm-none-eabi-gdb（CMSIS-DAP &#x2F; XDS110 必装，JLink 用户可选）"></a>6）OpenOCD 和 arm-none-eabi-gdb（CMSIS-DAP &#x2F; XDS110 必装，JLink 用户可选）</h4><blockquote>
+<p><strong>⚠️ v1.0.0 重要变更</strong>：如果你使用 <strong>JLink</strong> 调试器，可以完全跳过 OpenOCD。</p>
 </blockquote>
-<p>Linux 涓嬬殑 OpenOCD 鍜?GDB 鎺ㄨ崘閫氳繃 VSCode 鐨?TI 鎻掍欢鑷姩瀹夎锛?/p>
-<p>鍦?VSCode 鎻掍欢甯傚満瀹夎 <code>TI Embedded Development For VS Code</code>锛岀劧鍚庡湪渚ц竟鏍忛€夋嫨鈥濆畨瑁呮墍鏈変緷璧栤€濄€俆I 瀹氬埗鐗?OpenOCD 鍜?GDB 浼氳瀹夎鍒帮細</p>
+<p>Linux 下的 OpenOCD 和 GDB 推荐通过 VSCode 的 TI 插件自动安装：</p>
+<p>在 VSCode 插件市场安装 <code>TI Embedded Development For VS Code</code>，然后在侧边栏选择”安装所有依赖”。TI 定制版 OpenOCD 和 GDB 会被安装到：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">~/.config/Texas Instruments/ti-embedded-debug/openocd/&lt;version&gt;/</span><br><span class="line">~/.config/Texas Instruments/ti-embedded-debug/gdb/&lt;version&gt;/</span><br></pre></td></tr></table></figure>
 
-<p>TPA 鑴氭湰鍦?Linux 涓嬩細浼樺厛鎼滅储杩欎簺璺緞锛屾棤闇€鎵嬪姩閰嶇疆銆?/p>
+<p>TPA 脚本在 Linux 下会优先搜索这些路径，无需手动配置。</p>
 <blockquote>
-<p><strong>馃寪 缃戠粶闂澶囬€夋柟妗?/strong>锛氬鏋滀綘鍦?VSCode 鎻掍欢涓笅杞戒緷璧栭亣鍒扮綉缁滈棶棰橈紝鍙互鎵嬪姩浠?TI 瀹樼綉涓嬭浇 OpenOCD锛?/p>
+<p><strong>🌐 网络问题备选方案</strong>：如果你在 VSCode 插件中下载依赖遇到网络问题，可以手动从 TI 官网下载 OpenOCD：</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.ti.com.cn/tool/cn/download/CCSTUDIO-OPENOCD/1.5.0">TI CCStudio OpenOCD 1.5.0 涓嬭浇</a></li>
-<li>涓嬭浇 Linux 鐗堟湰锛岃В鍘嬪悗灏?<code>bin/</code> 鐩綍鍔犲叆 PATH 鍗冲彲</li>
+<li><a target="_blank" rel="noopener" href="https://www.ti.com.cn/tool/cn/download/CCSTUDIO-OPENOCD/1.5.0">TI CCStudio OpenOCD 1.5.0 下载</a></li>
+<li>下载 Linux 版本，解压后将 <code>bin/</code> 目录加入 PATH 即可</li>
 </ul>
 </blockquote>
-<p>澶囬€夋柟妗堬細浣跨敤绯荤粺鍖呯鐞嗗櫒</p>
+<p>备选方案：使用系统包管理器</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install openocd gdb-multiarch</span><br></pre></td></tr></table></figure>
 
-<p>娉ㄦ剰锛氱郴缁熶粨搴撶殑 <code>openocd</code> 鍙兘涓嶅惈 TI 瀹氬埗琛ヤ竵锛屾帹鑽愪紭鍏堜娇鐢?TI 瀹樻柟鐗堟湰銆?/p>
-<h4 id="6-5锛塉Link-椹卞姩涓庡伐鍏凤紙JLink-鐢ㄦ埛蹇呰锛?1"><a href="#6-5锛塉Link-椹卞姩涓庡伐鍏凤紙JLink-鐢ㄦ埛蹇呰锛?1" class="headerlink" title="6.5锛塉Link 椹卞姩涓庡伐鍏凤紙JLink 鐢ㄦ埛蹇呰锛?></a>6.5锛塉Link 椹卞姩涓庡伐鍏凤紙JLink 鐢ㄦ埛蹇呰锛?/h4><p>濡傛灉浣犱娇鐢?JLink 璋冭瘯鍣紝闇€瑕佸畨瑁?Segger 瀹樻柟 JLink 杞欢鍖咃紙鐗堟湰 鈮?7.70 鎺ㄨ崘锛夛細</p>
+<p>注意：系统仓库的 <code>openocd</code> 可能不含 TI 定制补丁，推荐优先使用 TI 官方版本。</p>
+<h4 id="6-5）JLink-驱动与工具（JLink-用户必装）-1"><a href="#6-5）JLink-驱动与工具（JLink-用户必装）-1" class="headerlink" title="6.5）JLink 驱动与工具（JLink 用户必装）"></a>6.5）JLink 驱动与工具（JLink 用户必装）</h4><p>如果你使用 JLink 调试器，需要安装 Segger 官方 JLink 软件包（版本 ≥ 7.70 推荐）：</p>
 <ul>
-<li><a target="_blank" rel="noopener" href="https://www.segger.com/downloads/jlink/">SEGGER JLink 涓嬭浇</a></li>
-<li>涓嬭浇 <code>.deb</code> 鍖呭畨瑁咃紙鑷姩鍔犲叆绯荤粺 PATH锛屾棤闇€棰濆閰嶇疆锛夛紝鎴栬В鍘?<code>.tar.gz</code> 鍒?<code>/opt/SEGGER/JLink/</code>锛堥渶鎵嬪姩灏?<code>bin/</code> 鍔犲叆 PATH 鎴栬 <code>JLINK_DIR</code>锛?/li>
+<li><a target="_blank" rel="noopener" href="https://www.segger.com/downloads/jlink/">SEGGER JLink 下载</a></li>
+<li>下载 <code>.deb</code> 包安装（自动加入系统 PATH，无需额外配置），或解压 <code>.tar.gz</code> 到 <code>/opt/SEGGER/JLink/</code>（需手动将 <code>bin/</code> 加入 PATH 或设 <code>JLINK_DIR</code>）</li>
 </ul>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 楠岃瘉瀹夎</span></span><br><span class="line">JLinkGDBServer -version</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 验证安装</span></span><br><span class="line">JLinkGDBServer -version</span><br></pre></td></tr></table></figure>
 
-<h4 id="7锛変竴琛岃瀹屽熀纭€宸ュ叿"><a href="#7锛変竴琛岃瀹屽熀纭€宸ュ叿" class="headerlink" title="7锛変竴琛岃瀹屽熀纭€宸ュ叿"></a>7锛変竴琛岃瀹屽熀纭€宸ュ叿</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install python3 gcc-arm-none-eabi cmake ninja-build</span><br></pre></td></tr></table></figure>
+<h4 id="7）一行装完基础工具"><a href="#7）一行装完基础工具" class="headerlink" title="7）一行装完基础工具"></a>7）一行装完基础工具</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> apt install python3 gcc-arm-none-eabi cmake ninja-build</span><br></pre></td></tr></table></figure>
 
-<p>鍐嶅姞涓?TI 瀹樻柟宸ュ叿锛圫DK + SysConfig锛夌殑瑙ｅ帇锛岀幆澧冨氨鍑嗗瀹屾垚浜嗐€?/p>
-<h3 id="4-3-鐜鍙橀噺閰嶇疆"><a href="#4-3-鐜鍙橀噺閰嶇疆" class="headerlink" title="4.3 鐜鍙橀噺閰嶇疆"></a>4.3 鐜鍙橀噺閰嶇疆</h3><p><strong>鍏ㄩ儴鍙€?/strong>銆備笉璁剧疆鏃讹紝TPA 浼氫粠 PATH 鑷姩鍙戠幇鍙墽琛屽伐鍏凤紝鎴栨悳绱?TI 宸ュ叿榛樿鐩綍銆?/p>
+<p>再加上 TI 官方工具（SDK + SysConfig）的解压，环境就准备完成了。</p>
+<h3 id="4-3-环境变量配置"><a href="#4-3-环境变量配置" class="headerlink" title="4.3 环境变量配置"></a>4.3 环境变量配置</h3><p><strong>全部可选</strong>。不设置时，TPA 会从 PATH 自动发现可执行工具，或搜索 TI 工具默认目录。</p>
 <table>
 <thead>
 <tr>
-<th>鍙橀噺</th>
-<th>Linux 榛樿鍊?/th>
-<th>璇存槑</th>
+<th>变量</th>
+<th>Linux 默认值</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody><tr>
 <td><code>MSPM0_SDK</code></td>
 <td><code>~/ti/mspm0_sdk_*</code></td>
-<td>MSPM0 SDK 鏍圭洰褰?/td>
+<td>MSPM0 SDK 根目录</td>
 </tr>
 <tr>
 <td><code>SYSCONFIG_DIR</code></td>
 <td><code>~/ti/sysconfig_*</code></td>
-<td>SysConfig 瀹夎鐩綍</td>
+<td>SysConfig 安装目录</td>
 </tr>
 <tr>
 <td><code>TI_ROOT</code></td>
 <td><code>~/ti</code></td>
-<td>鎵€鏈?TI 宸ュ叿鐨勬牴鐩綍</td>
+<td>所有 TI 工具的根目录</td>
 </tr>
 <tr>
 <td><code>OPENOCD_DIR</code></td>
-<td>PATH 鈫?<code>~/.config/.../openocd/*</code></td>
-<td>OpenOCD 鐩綍锛圥ATH 浼樺厛锛?/td>
+<td>PATH → <code>~/.config/.../openocd/*</code></td>
+<td>OpenOCD 目录（PATH 优先）</td>
 </tr>
 <tr>
 <td><code>GDB_DIR</code></td>
-<td>PATH 鈫?<code>~/.config/.../gdb/*</code></td>
-<td>GDB 鐩綍锛圥ATH 浼樺厛锛?/td>
+<td>PATH → <code>~/.config/.../gdb/*</code></td>
+<td>GDB 目录（PATH 优先）</td>
 </tr>
 <tr>
 <td><code>JLINK_DIR</code></td>
-<td>PATH 鈫?<code>/opt/SEGGER/JLink*</code></td>
-<td>JLink 瀹夎鐩綍锛圥ATH 浼樺厛锛?/td>
+<td>PATH → <code>/opt/SEGGER/JLink*</code></td>
+<td>JLink 安装目录（PATH 优先）</td>
 </tr>
 </tbody></table>
-<p>鎺ㄨ崘鍦?<code>~/.bashrc</code> 鎴?<code>~/.zshrc</code> 涓啓鍏ョ幆澧冨彉閲忥細</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TI 宸ュ叿閾炬牴鐩綍</span></span><br><span class="line"><span class="built_in">export</span> TI_ROOT=~/ti</span><br><span class="line"><span class="comment"># MSPM0 SDK 璺緞</span></span><br><span class="line"><span class="built_in">export</span> MSPM0_SDK=~/ti/mspm0_sdk_2_10_00_04</span><br><span class="line"><span class="comment"># SysConfig 瀹夎璺緞</span></span><br><span class="line"><span class="built_in">export</span> SYSCONFIG_DIR=~/ti/sysconfig_1.27.1</span><br><span class="line"><span class="comment"># 浠ヤ笅浠呭湪鑷姩鍙戠幇澶辫触鏃舵墜鍔ㄦ寚瀹?/span></span><br><span class="line"><span class="comment"># export OPENOCD_DIR=/path/to/openocd</span></span><br><span class="line"><span class="comment"># export GDB_DIR=/path/to/gdb</span></span><br><span class="line"><span class="comment"># export JLINK_DIR=/opt/SEGGER/JLink</span></span><br></pre></td></tr></table></figure>
+<p>推荐在 <code>~/.bashrc</code> 或 <code>~/.zshrc</code> 中写入环境变量：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># TI 工具链根目录</span></span><br><span class="line"><span class="built_in">export</span> TI_ROOT=~/ti</span><br><span class="line"><span class="comment"># MSPM0 SDK 路径</span></span><br><span class="line"><span class="built_in">export</span> MSPM0_SDK=~/ti/mspm0_sdk_2_10_00_04</span><br><span class="line"><span class="comment"># SysConfig 安装路径</span></span><br><span class="line"><span class="built_in">export</span> SYSCONFIG_DIR=~/ti/sysconfig_1.27.1</span><br><span class="line"><span class="comment"># 以下仅在自动发现失败时手动指定</span></span><br><span class="line"><span class="comment"># export OPENOCD_DIR=/path/to/openocd</span></span><br><span class="line"><span class="comment"># export GDB_DIR=/path/to/gdb</span></span><br><span class="line"><span class="comment"># export JLINK_DIR=/opt/SEGGER/JLink</span></span><br></pre></td></tr></table></figure>
 
-<p>濡傛灉浣犱娇鐢?ARM 瀹樼綉涓嬭浇鐨勫伐鍏烽摼锛堣€岄潪 apt 鐗堟湰锛夛紝杩橀渶灏嗙紪璇戝櫒鍔犲叆 PATH锛?/p>
+<p>如果你使用 ARM 官网下载的工具链（而非 apt 版本），还需将编译器加入 PATH：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">export</span> PATH=<span class="string">&quot;/opt/arm-gnu-toolchain-15.x.x-x86_64-arm-none-eabi/bin:<span class="variable">$PATH</span>&quot;</span></span><br></pre></td></tr></table></figure>
 
-<p><strong>宸ュ叿瑙ｆ瀽浼樺厛绾?/strong>锛堟墍鏈夊彲鎵ц宸ュ叿缁熶竴锛夛細</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. CLI 鍙傛暟          (--openocd / --gdb / --jlink-path)    鈫?鏈€楂樹紭鍏堢骇锛屾樉寮忔寚瀹?/span><br><span class="line">2. 鐜鍙橀噺          (OPENOCD_DIR / GDB_DIR / JLINK_DIR)    鈫?鎵嬪姩閰嶇疆</span><br><span class="line">3. PATH              (shutil.which)                          鈫?璺ㄥ钩鍙拌嚜鍔ㄥ彂鐜?/span><br><span class="line">4. TI 鎻掍欢缂撳瓨       (~/.config/Texas Instruments/...)       鈫?VSCode 鎻掍欢鑷姩瀹夎浣嶇疆</span><br><span class="line">5. 閬楃暀璺緞          (TI_ROOT / CCS_BASE)                    鈫?鏈€鍚庡厹搴?/span><br></pre></td></tr></table></figure>
+<p><strong>工具解析优先级</strong>（所有可执行工具统一）：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">1. CLI 参数          (--openocd / --gdb / --jlink-path)    ← 最高优先级，显式指定</span><br><span class="line">2. 环境变量          (OPENOCD_DIR / GDB_DIR / JLINK_DIR)    ← 手动配置</span><br><span class="line">3. PATH              (shutil.which)                          ← 跨平台自动发现</span><br><span class="line">4. TI 插件缓存       (~/.config/Texas Instruments/...)       ← VSCode 插件自动安装位置</span><br><span class="line">5. 遗留路径          (TI_ROOT / CCS_BASE)                    ← 最后兜底</span><br></pre></td></tr></table></figure>
 
-<p>濡傛灉涓嶉厤缃换浣曠幆澧冨彉閲忥紝TPA 浼氬湪 <code>~/ti/</code> 涓嬭嚜鍔ㄦ悳绱㈠苟鍖归厤鏈€鏂扮増鏈€傛槑纭寚瀹氬彲浠ラ伩鍏嶅鐗堟湰鍏卞瓨鏃剁殑姝т箟銆?/p>
-<h3 id="4-4-瀹夎-ti-project-assistant"><a href="#4-4-瀹夎-ti-project-assistant" class="headerlink" title="4.4 瀹夎 ti-project-assistant"></a>4.4 瀹夎 ti-project-assistant</h3><p>閫氳繃 pip 涓€閿畨瑁咃紝<code>mspm0-init</code> 鍛戒护鍏ㄥ眬鍙敤锛?/p>
+<p>如果不配置任何环境变量，TPA 会在 <code>~/ti/</code> 下自动搜索并匹配最新版本。明确指定可以避免多版本共存时的歧义。</p>
+<h3 id="4-4-安装-ti-project-assistant"><a href="#4-4-安装-ti-project-assistant" class="headerlink" title="4.4 安装 ti-project-assistant"></a>4.4 安装 ti-project-assistant</h3><p>通过 pip 一键安装，<code>mspm0-init</code> 命令全局可用：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install ti-project-assistant</span><br></pre></td></tr></table></figure>
 
-<p>瀹夎鍚庯紝鍦ㄤ换鎰忕洰褰曚笅閮藉彲浠ョ洿鎺ヨ繍琛岋細</p>
+<p>安装后，在任意目录下都可以直接运行：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mspm0-init --<span class="built_in">help</span></span><br><span class="line">mspm0-init --check</span><br></pre></td></tr></table></figure>
 
-<p>濡傛灉浣犲亸濂戒粠婧愮爜瀹夎锛堝紑鍙戞ā寮忥級锛?/p>
+<p>如果你偏好从源码安装（开发模式）：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git <span class="built_in">clone</span> git@github.com:AndyYang12345/Ti-Project-Assistant.git</span><br><span class="line"><span class="built_in">cd</span> ti-project-assistant</span><br><span class="line">pip install -e .</span><br></pre></td></tr></table></figure>
 
-<h3 id="4-5-璋冭瘯鍣ㄦ潈闄愰厤缃紙閲嶈锛?><a href="#4-5-璋冭瘯鍣ㄦ潈闄愰厤缃紙閲嶈锛? class="headerlink" title="4.5 璋冭瘯鍣ㄦ潈闄愰厤缃紙閲嶈锛?></a>4.5 璋冭瘯鍣ㄦ潈闄愰厤缃紙閲嶈锛?/h3><p>鍦?Linux 涓嬶紝USB 璋冭瘯鍣紙CMSIS-DAP銆乆DS110 绛夛級榛樿鍙湁 root 鐢ㄦ埛鎵嶈兘璁块棶銆傜洿鎺ヤ娇鐢ㄤ細瀵艰嚧 OpenOCD 鎶ユ潈闄愰敊璇€傞渶瑕侀厤缃?udev 瑙勫垯鎺堜簣鏅€氱敤鎴疯闂潈闄愩€?/p>
-<h4 id="閫氱敤鏂规硶锛氭坊鍔?udev-瑙勫垯"><a href="#閫氱敤鏂规硶锛氭坊鍔?udev-瑙勫垯" class="headerlink" title="閫氱敤鏂规硶锛氭坊鍔?udev 瑙勫垯"></a>閫氱敤鏂规硶锛氭坊鍔?udev 瑙勫垯</h4><p>鍒涘缓 <code>/etc/udev/rules.d/99-ti-debuggers.rules</code>锛?/p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">tee</span> /etc/udev/rules.d/99-ti-debuggers.rules &gt; /dev/null &lt;&lt; <span class="string">&#x27;EOF&#x27;</span></span><br><span class="line"><span class="comment"># CMSIS-DAP / DAPLink</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0d28&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;0204&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;c251&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;f001&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># XDS110 (TI 瀹樻柟璋冭瘯鍣?</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0451&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;bef3&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># JLink (SEGGER 璋冭瘯鍣?</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;1366&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;0101&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;1366&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;0105&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 閫氱敤 CMSIS-DAP v2 (HID 璁惧)</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0483&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;374b&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 閫氱敤瑙勫垯锛氬皢鎵€鏈?USB 涓插彛鍜?HID 璋冭瘯璁惧鐨勬潈闄愭斁寮€</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;tty&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0451&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0451&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line"><span class="comment"># 閲嶆柊鍔犺浇 udev 瑙勫垯</span></span><br><span class="line"><span class="built_in">sudo</span> udevadm control --reload-rules</span><br><span class="line"><span class="built_in">sudo</span> udevadm trigger</span><br></pre></td></tr></table></figure>
+<h3 id="4-5-调试器权限配置（重要）"><a href="#4-5-调试器权限配置（重要）" class="headerlink" title="4.5 调试器权限配置（重要）"></a>4.5 调试器权限配置（重要）</h3><p>在 Linux 下，USB 调试器（CMSIS-DAP、XDS110 等）默认只有 root 用户才能访问。直接使用会导致 OpenOCD 报权限错误。需要配置 udev 规则授予普通用户访问权限。</p>
+<h4 id="通用方法：添加-udev-规则"><a href="#通用方法：添加-udev-规则" class="headerlink" title="通用方法：添加 udev 规则"></a>通用方法：添加 udev 规则</h4><p>创建 <code>/etc/udev/rules.d/99-ti-debuggers.rules</code>：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> <span class="built_in">tee</span> /etc/udev/rules.d/99-ti-debuggers.rules &gt; /dev/null &lt;&lt; <span class="string">&#x27;EOF&#x27;</span></span><br><span class="line"><span class="comment"># CMSIS-DAP / DAPLink</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0d28&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;0204&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;c251&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;f001&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># XDS110 (TI 官方调试器)</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0451&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;bef3&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># JLink (SEGGER 调试器)</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;1366&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;0101&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;1366&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;0105&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 通用 CMSIS-DAP v2 (HID 设备)</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0483&quot;</span>, ATTRS&#123;idProduct&#125;==<span class="string">&quot;374b&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 通用规则：将所有 USB 串口和 HID 调试设备的权限放开</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;tty&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0451&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line">SUBSYSTEM==<span class="string">&quot;usb&quot;</span>, ATTRS&#123;idVendor&#125;==<span class="string">&quot;0451&quot;</span>, MODE=<span class="string">&quot;0666&quot;</span></span><br><span class="line">EOF</span><br><span class="line"></span><br><span class="line"><span class="comment"># 重新加载 udev 规则</span></span><br><span class="line"><span class="built_in">sudo</span> udevadm control --reload-rules</span><br><span class="line"><span class="built_in">sudo</span> udevadm trigger</span><br></pre></td></tr></table></figure>
 
-<h4 id="鏇夸唬鏂规锛氬姞鍏?dialout-plugdev-缁?><a href="#鏇夸唬鏂规锛氬姞鍏?dialout-plugdev-缁? class="headerlink" title="鏇夸唬鏂规锛氬姞鍏?dialout &#x2F; plugdev 缁?></a>鏇夸唬鏂规锛氬姞鍏?dialout &#x2F; plugdev 缁?/h4><p>濡傛灉浣犵殑 Linux 鍙戣鐗堢敤缁勬潈闄愮鐞?USB 璁惧锛堝 Ubuntu锛夛紝灏嗗綋鍓嶇敤鎴峰姞鍏?<code>dialout</code> 鍜?<code>plugdev</code> 缁勶細</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> usermod -a -G dialout,plugdev <span class="variable">$USER</span></span><br><span class="line"><span class="comment"># 娉ㄩ攢閲嶆柊鐧诲綍鍚庣敓鏁?/span></span><br></pre></td></tr></table></figure>
+<h4 id="替代方案：加入-dialout-plugdev-组"><a href="#替代方案：加入-dialout-plugdev-组" class="headerlink" title="替代方案：加入 dialout &#x2F; plugdev 组"></a>替代方案：加入 dialout &#x2F; plugdev 组</h4><p>如果你的 Linux 发行版用组权限管理 USB 设备（如 Ubuntu），将当前用户加入 <code>dialout</code> 和 <code>plugdev</code> 组：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> usermod -a -G dialout,plugdev <span class="variable">$USER</span></span><br><span class="line"><span class="comment"># 注销重新登录后生效</span></span><br></pre></td></tr></table></figure>
 
-<p>閰嶇疆瀹屾垚鍚庯紝閲嶆柊鎻掓嫈璋冭瘯鍣紝OpenOCD 鍗冲彲姝ｅ父璁块棶璁惧銆?/p>
-<h3 id="4-6-閰嶇疆鍜屽垱寤洪」鐩?><a href="#4-6-閰嶇疆鍜屽垱寤洪」鐩? class="headerlink" title="4.6 閰嶇疆鍜屽垱寤洪」鐩?></a>4.6 閰嶇疆鍜屽垱寤洪」鐩?/h3><p>渚濊禆瀹夎鍜屾潈闄愰厤缃氨缁悗锛屽悗缁搷浣滐紙SysConfig 鍥惧舰鍖栭厤缃€佽繍琛?<code>mspm0-init</code>銆乂SCode 璋冭瘯锛変笌 Windows 瀹屽叏涓€鑷淬€?/p>
-<h4 id="鑷-1"><a href="#鑷-1" class="headerlink" title="鑷"></a>鑷</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mspm0-init --check</span><br><span class="line"><span class="comment"># 纭繚鎵€鏈変緷璧栭」鍧囨樉绀?鉁?姝ｅ父锛圙it 涓哄彲閫夛級</span></span><br></pre></td></tr></table></figure>
+<p>配置完成后，重新插拔调试器，OpenOCD 即可正常访问设备。</p>
+<h3 id="4-6-配置和创建项目"><a href="#4-6-配置和创建项目" class="headerlink" title="4.6 配置和创建项目"></a>4.6 配置和创建项目</h3><p>依赖安装和权限配置就绪后，后续操作（SysConfig 图形化配置、运行 <code>mspm0-init</code>、VSCode 调试）与 Windows 完全一致。</p>
+<h4 id="自检-1"><a href="#自检-1" class="headerlink" title="自检"></a>自检</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">mspm0-init --check</span><br><span class="line"><span class="comment"># 确保所有依赖项均显示 ✓ 正常（Git 为可选）</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="鍒涘缓椤圭洰"><a href="#鍒涘缓椤圭洰" class="headerlink" title="鍒涘缓椤圭洰"></a>鍒涘缓椤圭洰</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 鍦ㄥ寘鍚?.syscfg 鏂囦欢鐨勭洰褰曚笅鐩存帴杩愯</span></span><br><span class="line">mspm0-init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 鎴栨墜鍔ㄦ寚瀹?/span></span><br><span class="line">mspm0-init new myboard.syscfg -n my_project -d cmsis-dap</span><br></pre></td></tr></table></figure>
+<h4 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 在包含 .syscfg 文件的目录下直接运行</span></span><br><span class="line">mspm0-init</span><br><span class="line"></span><br><span class="line"><span class="comment"># 或手动指定</span></span><br><span class="line">mspm0-init new myboard.syscfg -n my_project -d cmsis-dap</span><br></pre></td></tr></table></figure>
 
-<h4 id="鏇存崲璋冭瘯鍣?><a href="#鏇存崲璋冭瘯鍣? class="headerlink" title="鏇存崲璋冭瘯鍣?></a>鏇存崲璋冭瘯鍣?/h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mspm0-init regenerate -d xds110        <span class="comment"># 鍒囨崲鍒?XDS110</span></span><br><span class="line">mspm0-init regenerate -d jlink         <span class="comment"># 鍒囨崲鍒?JLink锛圫egger 鍘熺敓 GDB Server锛?/span></span><br><span class="line">mspm0-init regenerate -d none          <span class="comment"># 绉婚櫎璋冭瘯鍣ㄩ厤缃紙绾紪璇戠幆澧冿級</span></span><br></pre></td></tr></table></figure>
+<h4 id="更换调试器"><a href="#更换调试器" class="headerlink" title="更换调试器"></a>更换调试器</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">mspm0-init regenerate -d xds110        <span class="comment"># 切换到 XDS110</span></span><br><span class="line">mspm0-init regenerate -d jlink         <span class="comment"># 切换到 JLink（Segger 原生 GDB Server）</span></span><br><span class="line">mspm0-init regenerate -d none          <span class="comment"># 移除调试器配置（纯编译环境）</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="鏋勫缓鍜岃皟璇?><a href="#鏋勫缓鍜岃皟璇? class="headerlink" title="鏋勫缓鍜岃皟璇?></a>鏋勫缓鍜岃皟璇?/h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 鍛戒护琛屾瀯寤猴紙鍏呭垎鍒╃敤澶氭牳锛?/span></span><br><span class="line">cmake --build build -j$(<span class="built_in">nproc</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 鍦?VSCode 涓墦寮€锛屾寜 F5 鍚姩璋冭瘯</span></span><br><span class="line">code .</span><br></pre></td></tr></table></figure>
+<h4 id="构建和调试"><a href="#构建和调试" class="headerlink" title="构建和调试"></a>构建和调试</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 命令行构建（充分利用多核）</span></span><br><span class="line">cmake --build build -j$(<span class="built_in">nproc</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 在 VSCode 中打开，按 F5 启动调试</span></span><br><span class="line">code .</span><br></pre></td></tr></table></figure>
 
 <blockquote>
-<p><strong>Linux 鐗规湁浼樺娍</strong>锛?code>$(nproc)</code> 浼氳嚜鍔ㄤ娇鐢ㄥ叏閮?CPU 鏍稿績骞惰缂栬瘧锛屾瘮 Windows 涓嬬殑 Ninja 榛樿骞跺彂鏁版洿蹇€傚悓鏃?Linux 鐨勬枃浠剁郴缁熸€ц兘鏇村ソ锛?code>regenerate</code> 鎿嶄綔鐨?IO 寮€閿€鏇翠綆銆?/p>
+<p><strong>Linux 特有优势</strong>：<code>$(nproc)</code> 会自动使用全部 CPU 核心并行编译，比 Windows 下的 Ninja 默认并发数更快。同时 Linux 的文件系统性能更好，<code>regenerate</code> 操作的 IO 开销更低。</p>
 </blockquote>
-<h3 id="4-7-Linux-涓嬬殑宸茬煡闂涓庤В鍐?><a href="#4-7-Linux-涓嬬殑宸茬煡闂涓庤В鍐? class="headerlink" title="4.7 Linux 涓嬬殑宸茬煡闂涓庤В鍐?></a>4.7 Linux 涓嬬殑宸茬煡闂涓庤В鍐?/h3><h4 id="SysConfig-CLI-鏃犳墽琛屾潈闄?><a href="#SysConfig-CLI-鏃犳墽琛屾潈闄? class="headerlink" title="SysConfig CLI 鏃犳墽琛屾潈闄?></a>SysConfig CLI 鏃犳墽琛屾潈闄?/h4><p>浠?<code>.tar.gz</code> 瑙ｅ帇鐨?<code>sysconfig_cli.sh</code> 鍙兘缂哄皯鎵ц鏉冮檺锛?/p>
+<h3 id="4-7-Linux-下的已知问题与解决"><a href="#4-7-Linux-下的已知问题与解决" class="headerlink" title="4.7 Linux 下的已知问题与解决"></a>4.7 Linux 下的已知问题与解决</h3><h4 id="SysConfig-CLI-无执行权限"><a href="#SysConfig-CLI-无执行权限" class="headerlink" title="SysConfig CLI 无执行权限"></a>SysConfig CLI 无执行权限</h4><p>从 <code>.tar.gz</code> 解压的 <code>sysconfig_cli.sh</code> 可能缺少执行权限：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> +x ~/ti/sysconfig_1.27.1/sysconfig_cli.sh</span><br></pre></td></tr></table></figure>
 
-<h4 id="SysConfig-GUI-鏃犳硶鍚姩锛堟棤澶存湇鍔″櫒锛?><a href="#SysConfig-GUI-鏃犳硶鍚姩锛堟棤澶存湇鍔″櫒锛? class="headerlink" title="SysConfig GUI 鏃犳硶鍚姩锛堟棤澶存湇鍔″櫒锛?></a>SysConfig GUI 鏃犳硶鍚姩锛堟棤澶存湇鍔″櫒锛?/h4><p>濡傛灉绾懡浠よ鐜锛堟棤 GUI锛変笅闇€瑕佸浘褰㈠寲閰嶇疆 SysConfig锛?/p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 鏂规硶涓€锛氬畨瑁?X11 杞彂鎵€闇€渚濊禆</span></span><br><span class="line"><span class="built_in">sudo</span> apt install libgtk-3-0 libwebkit2gtk-4.0-37</span><br><span class="line"></span><br><span class="line"><span class="comment"># 鏂规硶浜岋細鍦ㄦ湰鍦?Windows 涓婅繍琛?SysConfig GUI锛岀紪杈戝悗灏?.syscfg 浼犲埌 Linux</span></span><br></pre></td></tr></table></figure>
+<h4 id="SysConfig-GUI-无法启动（无头服务器）"><a href="#SysConfig-GUI-无法启动（无头服务器）" class="headerlink" title="SysConfig GUI 无法启动（无头服务器）"></a>SysConfig GUI 无法启动（无头服务器）</h4><p>如果纯命令行环境（无 GUI）下需要图形化配置 SysConfig：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 方法一：安装 X11 转发所需依赖</span></span><br><span class="line"><span class="built_in">sudo</span> apt install libgtk-3-0 libwebkit2gtk-4.0-37</span><br><span class="line"></span><br><span class="line"><span class="comment"># 方法二：在本地 Windows 上运行 SysConfig GUI，编辑后将 .syscfg 传到 Linux</span></span><br></pre></td></tr></table></figure>
 
-<h4 id="澶氱増鏈?SDK-SysConfig-鍏卞瓨"><a href="#澶氱増鏈?SDK-SysConfig-鍏卞瓨" class="headerlink" title="澶氱増鏈?SDK&#x2F;SysConfig 鍏卞瓨"></a>澶氱増鏈?SDK&#x2F;SysConfig 鍏卞瓨</h4><p>濡傛灉浣犲畨瑁呬簡澶氫釜鐗堟湰鐨?SDK 鎴?SysConfig锛屼笉璁剧幆澧冨彉閲忔椂鑴氭湰浼氳嚜鍔ㄩ€夋嫨鏈€鏂扮増鏈€傚闇€鎸囧畾鐗瑰畾鐗堟湰锛岄€氳繃鐜鍙橀噺鎴栧懡浠よ鍙傛暟 <code>--sdk</code>銆?code>--sysconfig</code> 绮剧‘鎸囧畾銆?/p>
-<h3 id="4-8-灏忕粨"><a href="#4-8-灏忕粨" class="headerlink" title="4.8 灏忕粨"></a>4.8 灏忕粨</h3><p>Linux 鐜涓嬬殑瀹夎娴佺▼鎬荤粨锛?/p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">鈶?pip install ti-project-assistant</span><br><span class="line">鈶?sudo apt install gcc-arm-none-eabi cmake ninja-build</span><br><span class="line">鈶?涓嬭浇 MSPM0 SDK + SysConfig 鈫?瑙ｅ帇鍒?~/ti/</span><br><span class="line">鈶?(鍙€? 瀹夎 JLink锛堝浣跨敤 JLink 璋冭瘯鍣級</span><br><span class="line">鈶?(鍙€? 鍦?~/.bashrc 璁剧疆鐜鍙橀噺</span><br><span class="line">鈶?閰嶇疆 udev 璋冭瘯鍣ㄦ潈闄?/span><br><span class="line">鈶?mspm0-init --check 鈫?mspm0-init 鈫?code . 鈫?F5</span><br></pre></td></tr></table></figure>
+<h4 id="多版本-SDK-SysConfig-共存"><a href="#多版本-SDK-SysConfig-共存" class="headerlink" title="多版本 SDK&#x2F;SysConfig 共存"></a>多版本 SDK&#x2F;SysConfig 共存</h4><p>如果你安装了多个版本的 SDK 或 SysConfig，不设环境变量时脚本会自动选择最新版本。如需指定特定版本，通过环境变量或命令行参数 <code>--sdk</code>、<code>--sysconfig</code> 精确指定。</p>
+<h3 id="4-8-小结"><a href="#4-8-小结" class="headerlink" title="4.8 小结"></a>4.8 小结</h3><p>Linux 环境下的安装流程总结：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">① pip install ti-project-assistant</span><br><span class="line">② sudo apt install gcc-arm-none-eabi cmake ninja-build</span><br><span class="line">③ 下载 MSPM0 SDK + SysConfig → 解压到 ~/ti/</span><br><span class="line">④ (可选) 安装 JLink（如使用 JLink 调试器）</span><br><span class="line">⑤ (可选) 在 ~/.bashrc 设置环境变量</span><br><span class="line">⑥ 配置 udev 调试器权限</span><br><span class="line">⑦ mspm0-init --check → mspm0-init → code . → F5</span><br></pre></td></tr></table></figure>
 
-<p>v1.0.0 瀹屾暣鏀寔 SDK 涓叏閮?58 娆?MSPM0 鑺墖鍜?CMSIS-DAP &#x2F; XDS110 &#x2F; JLink &#x2F; none 鍥涚璋冭瘯妯″紡銆傜浉姣?Windows锛孡inux 涓嶄粎宸ュ叿閾惧畨瑁呯畝渚匡紝鑰屼笖浠庢牴鏈笂灏辨槸鏈」鐩殑鏈€浣宠繍琛岀幆澧冣€斺€旀病鏈夎矾寰勮浆涔夐棶棰樸€佸ぉ鐒舵敮鎸佸苟琛岀紪璇戙€佽剼鏈墽琛屾晥鐜囨洿楂樸€傚鏋滀綘鏃ュ父浣跨敤 Linux 杩涜寮€鍙戯紝鎺ㄨ崘鐩存帴浠?Linux 浣滀负 MSPM0 鐨勪富寮€鍙戝钩鍙般€?/p>
-</div><hr><h2>鐗堟潈涓庢潵婧?/h2><p>鍘熸枃锛?a href="https://andyyang12345.github.io/2026/07/11/Ti-Project-Assistant%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">Ti-Project-Assistant 浣跨敤鏁欑▼</a>銆傞」鐩粨搴擄細<a href="https://github.com/AndyYang12345/Ti-Project-Assistant" target="_blank" rel="noopener">AndyYang12345/Ti-Project-Assistant</a>銆傛湰椤甸潰淇濈暀鍘熶綔鑰呯讲鍚嶏紝浠呬綔涓汉瀛︿範鏁寸悊涓庤縼绉汇€傞〉澶磋儗鏅細<a href="https://en.free-wallpapers.su/img115785.htm" target="_blank" rel="noopener">Sakurajima Mai wallpaper</a>銆?/p></article><aside class="sidebar"><section class="profile-card"><div class="avatar-wrap"><img src="assets/mai-sakurajima.jpg" alt="站点头像"></div><h2>Estrella-231</h2><p>个人技术博客，分享嵌入式开发、MSPM0、VS Code 与工程实践。</p><div class="stats"><div><b>1</b><span>Articles</span></div><div><b>6</b><span>Tags</span></div><div><b>1</b><span>Series</span></div></div><a class="github-btn" href="https://github.com/Estrella-231" target="_blank" rel="noopener">◉　GitHub 主页</a><div class="social-row"><a href="https://github.com/Estrella-231" target="_blank" rel="noopener">GitHub</a></div></section><section class="announcement"><h3>📣 Announcement</h3><p>持续记录 MSPM0 与智能硬件开发。</p></section><section class="toc"><h3>☰　本文导航</h3><a href="#Ti-Project-Assistant-TPA-使用教程">项目概览</a><a href="#1-前言">前言</a><a href="#2-项目介绍">项目介绍</a><a href="#3-使用教程">Windows 使用教程</a><a href="#4-Linux-下的安装和使用指南">Linux 指南</a></section></aside></main><footer class="footer" id="about"><div class="shell">漏 2026 Embedded Engineering Notes 路 Built for practical MSPM0 development</div></footer><script>const b=document.body;document.getElementById("theme").onclick=()=>{b.classList.toggle("light");document.getElementById("theme").textContent=b.classList.contains("light")?"鈽€":"鈽?};</script></body></html>
-
+<p>v1.0.0 完整支持 SDK 中全部 58 款 MSPM0 芯片和 CMSIS-DAP &#x2F; XDS110 &#x2F; JLink &#x2F; none 四种调试模式。相比 Windows，Linux 不仅工具链安装简便，而且从根本上就是本项目的最佳运行环境——没有路径转义问题、天然支持并行编译、脚本执行效率更高。如果你日常使用 Linux 进行开发，推荐直接以 Linux 作为 MSPM0 的主开发平台。</p>
+</div><hr><h2>版权与来源</h2><p>原文：<a href="https://andyyang12345.github.io/2026/07/11/Ti-Project-Assistant%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" target="_blank" rel="noopener">Ti-Project-Assistant 使用教程</a>。项目仓库：<a href="https://github.com/AndyYang12345/Ti-Project-Assistant" target="_blank" rel="noopener">AndyYang12345/Ti-Project-Assistant</a>。本页面保留原作者署名，仅作个人学习整理与迁移。页头背景：<a href="https://en.free-wallpapers.su/img115785.htm" target="_blank" rel="noopener">Sakurajima Mai wallpaper</a>。</p></article><aside class="sidebar"><section class="profile-card"><div class="avatar-wrap"><img src="assets/mai-sakurajima.jpg" alt="站点头像"></div><h2>Estrella-231</h2><p>个人技术博客，分享嵌入式开发、MSPM0、VS Code 与工程实践。</p><div class="stats"><div><b>1</b><span>Articles</span></div><div><b>6</b><span>Tags</span></div><div><b>1</b><span>Series</span></div></div><a class="github-btn" href="https://github.com/Estrella-231" target="_blank" rel="noopener">◉　GitHub 主页</a><div class="social-row"><a href="https://github.com/Estrella-231" target="_blank" rel="noopener">GitHub</a></div></section><section class="announcement"><h3>📣 Announcement</h3><p>持续记录 MSPM0 与智能硬件开发。</p></section><section class="toc"><h3>☰　本文导航</h3><a href="#Ti-Project-Assistant-TPA-使用教程">项目概览</a><a href="#1-前言">前言</a><a href="#2-项目介绍">项目介绍</a><a href="#3-使用教程">Windows 使用教程</a><a href="#4-Linux-下的安装和使用指南">Linux 指南</a></section></aside></main><footer class="footer" id="about"><div class="shell">© 2026 Embedded Engineering Notes · Built for practical MSPM0 development</div></footer><script>const b=document.body;document.getElementById("theme").onclick=()=>{b.classList.toggle("light");document.getElementById("theme").textContent=b.classList.contains("light")?"☀":"☾"};</script></body></html>
